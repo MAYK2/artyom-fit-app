@@ -1,8 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import { MessageCircle } from "lucide-react";
-import { getWALink } from "@/components/ui/WhatsAppButton";
 import { ItemRopa } from "@/services/ropa";
+import AddToCartButtonRopa from "@/components/ui/AddToCartButtonRopa";
 
 function formatPrecio(n: number) {
   return new Intl.NumberFormat("es-AR", { style: "currency", currency: "ARS", maximumFractionDigits: 0 }).format(n);
@@ -44,14 +43,7 @@ export default function RopaCard({ item }: { item: ItemRopa }) {
 
         <p className="product-card__price">{formatPrecio(item.precio)}</p>
 
-        <Link
-          href={getWALink(`Hola! Me interesa: ${item.nombre}. ¿Está disponible?`)}
-          target="_blank" rel="noopener noreferrer"
-          className="btn-primary"
-          style={{ width: "100%", marginTop: 4 }}
-        >
-          <MessageCircle size={15} /> Consultar
-        </Link>
+        <AddToCartButtonRopa item={item} />
       </div>
     </article>
   );

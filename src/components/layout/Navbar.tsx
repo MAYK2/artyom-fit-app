@@ -5,6 +5,7 @@ import Image from "next/image";
 import { ShoppingCart, Menu, X, Search } from "lucide-react";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
+import { useCart } from "@/context/CartContext";
 
 const navLinks = [
   { label: "Suplementos", href: "/" },
@@ -15,6 +16,7 @@ const navLinks = [
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
+  const { totalItems } = useCart();
 
   return (
     <header style={{
@@ -90,12 +92,23 @@ export default function Navbar() {
 
           <Link href="/carrito" style={{
             display: "flex", alignItems: "center",
-            padding: 8, color: "#94a3b8", transition: "color 0.2s"
+            padding: 8, color: "#94a3b8", transition: "color 0.2s",
+            position: "relative",
           }}
             onMouseEnter={(e) => (e.currentTarget.style.color = "#0dcaf0")}
             onMouseLeave={(e) => (e.currentTarget.style.color = "#94a3b8")}
           >
             <ShoppingCart size={20} />
+            {totalItems > 0 && (
+              <span style={{
+                position: "absolute", top: 2, right: 2,
+                background: "#0dcaf0", color: "#020617",
+                borderRadius: "50%", width: 17, height: 17,
+                fontSize: "0.6rem", fontWeight: 800,
+                display: "flex", alignItems: "center", justifyContent: "center",
+                lineHeight: 1,
+              }}>{totalItems > 9 ? "9+" : totalItems}</span>
+            )}
           </Link>
 
           <button

@@ -1,8 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import { MessageCircle } from "lucide-react";
 import { Producto } from "@/types";
-import { getWALink } from "@/components/ui/WhatsAppButton";
+import AddToCartButton from "@/components/ui/AddToCartButton";
 
 interface ProductCardProps {
   producto: Producto;
@@ -47,16 +46,7 @@ export default function ProductCard({ producto }: ProductCardProps) {
       <div className="product-card__body">
         <p className="product-card__name">{producto.nombre}</p>
         <p className="product-card__price">{formatPrecio(producto.precioArtyom)}</p>
-        <Link
-          href={getWALink(`Hola! Me interesa: ${producto.nombre}. ¿Está disponible?`)}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn-primary"
-          style={{ width: "100%", marginTop: 4 }}
-        >
-          <MessageCircle size={15} />
-          Consultar
-        </Link>
+        <AddToCartButton producto={producto} />
       </div>
     </article>
   );

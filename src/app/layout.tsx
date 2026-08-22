@@ -3,6 +3,7 @@ import { Inter, Orbitron } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import WhatsAppButton from "@/components/ui/WhatsAppButton";
+import { CartProvider } from "@/context/CartContext";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -28,9 +29,11 @@ export default function RootLayout({
   return (
     <html lang="es" className={`${inter.variable} ${orbitron.variable} h-full`}>
       <body className="min-h-full bg-neutral-950 text-white antialiased">
-        <Navbar />
-        <main className="pt-20">{children}</main>
-        <WhatsAppButton />
+        <CartProvider>
+          <Navbar />
+          <main className="pt-20">{children}</main>
+          <WhatsAppButton />
+        </CartProvider>
       </body>
     </html>
   );

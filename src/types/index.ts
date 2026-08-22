@@ -20,8 +20,18 @@ export interface VarianteIndumentaria {
   stock: number;
 }
 
+// Producto unificado para el carrito (suplementos + ropa)
+export interface CartProduct {
+  id: string;
+  nombre: string;
+  precio: number;
+  imagen?: string | null;
+  tipo: "suplemento" | "ropa";
+  variante?: string; // talle (ropa) o sabor (suplemento)
+}
+
 // Ítem del carrito
 export interface CartItem {
-  producto: Producto;
+  producto: CartProduct;
   cantidad: number;
 }
