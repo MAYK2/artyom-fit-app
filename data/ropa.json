@@ -1,0 +1,24 @@
+[
+  {
+    "id": "remera-dry-fit-negra",
+    "nombre": "Remera Dry Fit",
+    "precio": 15000,
+    "imagen": null,
+    "categoria": "Remeras",
+    "stock": true,
+    "talles": ["S", "M", "L", "XL", "XXL"],
+    "colores": ["Negro", "Blanco", "Gris"],
+    "descripcion": "Remera deportiva de tela dry fit de alta performance. Tejido liviano y transpirable que aleja la humedad del cuerpo, ideal para entrenamiento de alta intensidad. Diseño ergonómico con costuras planas para máxima comodidad. Disponible en múltiples talles y colores."
+  },
+  {
+    "id": "short-deportivo-negro",
+    "nombre": "Short Deportivo",
+    "precio": 18000,
+    "imagen": null,
+    "categoria": "Shorts",
+    "stock": true,
+    "talles": ["S", "M", "L", "XL"],
+    "colores": ["Negro", "Gris"],
+    "descripcion": "Short deportivo con tela dry fit elástica de cuatro vías. Cintura ajustable con cordón, bolsillos laterales y malla interior. Ideal para gym, running o cualquier actividad física. Tela liviana y de secado rápido."
+  }
+]

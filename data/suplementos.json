@@ -1,0 +1,62 @@
+[
+  {
+    "id": "whey-platinum-star-2lb",
+    "marca": "Star Nutrition",
+    "nombre": "Whey Platinum 2lb Doy Pack",
+    "precio": 90000,
+    "imagen": "/productos/star-whey-chocolate-2lb.jpg",
+    "categoria": "Proteína",
+    "stock": true,
+    "descripcion": "La Platinum Whey Protein de Star Nutrition es una proteína de suero de leche de alta calidad, elaborada con una mezcla de Whey Concentrate y Whey Isolate para maximizar la absorción de aminoácidos. Con más de 20g de proteína por porción, es ideal para la recuperación muscular post-entrenamiento y para alcanzar los requerimientos proteicos diarios. Su textura suave y su gran variedad de sabores la convierten en una de las más vendidas del mercado. Libre de gluten y sin azúcar agregada. Formato Doy Pack de 2 lb (aprox. 907g), perfecto para llevar al gym o guardar en casa."
+  },
+  {
+    "id": "tnt-dynamite-star-240g",
+    "marca": "Star Nutrition",
+    "nombre": "TNT Dynamite 240gr",
+    "precio": 29000,
+    "imagen": "/productos/tntdynamitepreentreno.jpg",
+    "categoria": "Pre-Workout",
+    "stock": true,
+    "descripcion": "TNT Dynamite es el pre-entrenamiento explosivo de Star Nutrition, diseñado para atletas que buscan el máximo rendimiento. Su fórmula combina cafeína, vitaminas del complejo B (B6 y B12) y aminoácidos para potenciar la energía, el foco mental y la resistencia durante el entrenamiento. Con 30 porciones por envase de 240g, cada medida aporta una carga energética precisa para atacar tus sesiones con intensidad. Sin TACC. No recomendado para menores de edad ni personas sensibles a la cafeína."
+  },
+  {
+    "id": "creatina-doypack-star-300g",
+    "marca": "Star Nutrition",
+    "nombre": "Creatina Monohidrato 300gr Doy Pack",
+    "precio": 28000,
+    "imagen": "/productos/star-creatina-doypack-300g.jpg",
+    "categoria": "Creatina",
+    "stock": true,
+    "descripcion": "La Creatina Monohidrato de Star Nutrition es 100% pura, ultramicronizada e importada desde EE.UU., garantizando la máxima pureza y absorción. Con 5g de creatina pura por porción (60 servicios), es el suplemento más estudiado de la historia para aumentar la fuerza, potencia y masa muscular. Al ser insípida y soluble, se mezcla fácilmente con agua, jugo o cualquier batido. Libre de gluten y sin TACC. Formato Doy Pack de 300g, cómodo y práctico para el día a día."
+  },
+  {
+    "id": "creatina-ena-300g",
+    "marca": "ENA",
+    "nombre": "Creatina Micronizada 300gr",
+    "precio": 32000,
+    "imagen": "/productos/ena-creatina-sin-sabor-300g.jpg",
+    "categoria": "Creatina",
+    "stock": true,
+    "descripcion": "La Creatina Micronizada de ENA Sport es fabricada en Argentina bajo estrictos estándares de calidad y certificada por la Unión Argentina de Rugby (UAR) como proveedor oficial. Con 5g de creatina monohidrato micronizada por porción (60 ingestas), favorece el aumento de fuerza explosiva y la recuperación entre series. Su proceso de micronización garantiza mayor solubilidad y absorción. Sin sabor, libre de gluten y sin TACC. Presentación en Doy Pack de 300g, ideal para mezclar con agua o tu suplemento favorito."
+  },
+  {
+    "id": "caffeine-star-30cap",
+    "marca": "Star Nutrition",
+    "nombre": "Caffeine 200 x30 Caps",
+    "precio": 9500,
+    "imagen": "/productos/starcaffeine.jpg",
+    "categoria": "Pre-Workout",
+    "stock": true,
+    "descripcion": "Caffeine 200 de Star Nutrition es la opción más práctica para obtener energía y foco cuando más lo necesitás. Cada cápsula aporta 200mg de cafeína anhidra pura, equivalente a aproximadamente 2 tazas de café fuerte. Ideal como pre-entrenamiento, para el trabajo o el estudio. Con 30 cápsulas por envase, es fácil de llevar a cualquier lado. Sin azúcar, sin calorías y libre de gluten. No recomendado para personas sensibles a estimulantes, embarazadas o menores de 18 años."
+  },
+  {
+    "id": "shaker-espiral-600ml",
+    "marca": "Xtrenght Nutrition",
+    "nombre": "Shaker Espiral 600ml",
+    "precio": 10000,
+    "imagen": "/productos/shakerxtrenght.jpg",
+    "categoria": "Accesorios",
+    "stock": true,
+    "descripcion": "El Shaker Espiral de Xtrenght Nutrition es el compañero ideal para preparar tus batidos de proteína, creatina o pre-workout sin grumos. Su sistema de resorte en espiral mezcla de manera efectiva cualquier polvo, logrando una textura perfectamente homogénea. Capacidad de 600ml con graduaciones marcadas para medir líquidos con precisión. Tapa a rosca hermética, resistente a caídas y fácil de limpiar. Sin BPA."
+  }
+]
