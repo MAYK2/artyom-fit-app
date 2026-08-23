@@ -35,3 +35,29 @@ Esta es la guía maestra para cualquier IA que edite este proyecto. Antes de hac
 ## 6. Integración WhatsApp
 - El modelo de negocio se basa en cerrar ventas por WhatsApp.
 - El CTA principal en todas las tarjetas de producto y páginas de detalle es "Consultar", el cual redirecciona usando la función `getWALink` de `src/components/ui/WhatsAppButton.tsx` con un mensaje predefinido.
+
+## 7. Agent Readiness (Accesibilidad para IAs y Tests automatizados)
+El proyecto tiene convenciones de agent readiness que **deben mantenerse** al agregar o modificar componentes:
+
+### IDs únicos en elementos interactivos
+- Botones de agregar al carrito: `id="btn-agregar-{producto.id}"` (generado dinámicamente en `AddToCartButton.tsx`).
+- Botón vaciar carrito: `id="btn-vaciar-carrito"`.
+- Botón de pedido WhatsApp: `id="btn-pedido-whatsapp"`.
+- Input de búsqueda del catálogo: `id="catalogo-busqueda"`.
+- Select de orden: `id="catalogo-orden"`.
+- Filtros de categoría: `id="filtro-categoria-{slug}"` (slug = nombre en minúsculas con guiones).
+- Filtros de marca: `id="filtro-marca-{slug}"`.
+- Input de búsqueda del Navbar: `id="navbar-search"`.
+
+### ARIA labels obligatorios
+- El link del carrito en el Navbar tiene `aria-label="Carrito de compras"` (solo contiene un ícono, sin texto visible).
+- Los botones `+` y `-` de cantidad en el carrito tienen `aria-label` dinámico con el nombre del producto.
+- El botón de eliminar ítem del carrito tiene `aria-label` dinámico.
+- El botón de agregar al carrito tiene `aria-label` dinámico que cambia entre "Agregar X al carrito" y "X agregado al carrito".
+
+### aria-pressed en filtros tipo toggle
+- Los botones de filtro de categoría y marca usan `aria-pressed={activo}` para indicar su estado.
+
+### Labels de formulario
+- Los `<input>` de búsqueda tienen un `<label htmlFor>` con clase `sr-only` (visualmente oculto, legible por lectores de pantalla y agentes).
+- Nunca crear un `<input>` o `<select>` nuevo sin su `id` y `aria-label` correspondiente.

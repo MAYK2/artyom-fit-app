@@ -86,11 +86,12 @@ export default function Navbar() {
         {/* Lado Derecho: Buscador + Carrito + Hamburguesa */}
         <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
           <div className="search-input nav-search" style={{ maxWidth: 200 }}>
+            <label htmlFor="navbar-search" className="sr-only">Buscar productos</label>
             <Search size={14} color="#64748b" />
-            <input type="text" placeholder="Buscar..." />
+            <input id="navbar-search" type="text" aria-label="Buscar productos" placeholder="Buscar..." />
           </div>
 
-          <Link href="/carrito" style={{
+          <Link href="/carrito" aria-label="Carrito de compras" style={{
             display: "flex", alignItems: "center",
             padding: 8, color: "#94a3b8", transition: "color 0.2s",
             position: "relative",

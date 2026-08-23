@@ -43,9 +43,12 @@ export default function CatalogoGrid({ productos, categorias }: CatalogoGridProp
           {/* Fila 1: search + orden */}
           <div style={{ display: "flex", alignItems: "center", gap: 12, flexWrap: "wrap" }}>
             <div className="search-input" style={{ flex: "1 1 200px", maxWidth: 320 }}>
+              <label htmlFor="catalogo-busqueda" className="sr-only">Buscar producto</label>
               <Search size={15} color="#64748b" />
               <input
+                id="catalogo-busqueda"
                 type="text"
+                aria-label="Buscar producto"
                 placeholder="Buscar producto..."
                 value={busqueda}
                 onChange={(e) => setBusqueda(e.target.value)}
@@ -53,6 +56,8 @@ export default function CatalogoGrid({ productos, categorias }: CatalogoGridProp
             </div>
 
             <select
+              id="catalogo-orden"
+              aria-label="Ordenar productos por precio"
               value={orden}
               onChange={(e) => setOrden(e.target.value)}
               style={{
@@ -78,6 +83,8 @@ export default function CatalogoGrid({ productos, categorias }: CatalogoGridProp
             {categorias.map((cat) => (
               <button
                 key={cat}
+                id={`filtro-categoria-${cat.toLowerCase().replace(/\s+/g, "-")}`}
+                aria-pressed={categoria === cat}
                 className={`filter-pill ${categoria === cat ? "active" : ""}`}
                 onClick={() => setCategoria(cat)}
               >
@@ -92,6 +99,8 @@ export default function CatalogoGrid({ productos, categorias }: CatalogoGridProp
             {marcas.map((m) => (
               <button
                 key={m}
+                id={`filtro-marca-${m.toLowerCase().replace(/\s+/g, "-")}`}
+                aria-pressed={marca === m}
                 className={`filter-pill ${marca === m ? "active" : ""}`}
                 onClick={() => setMarca(m)}
               >

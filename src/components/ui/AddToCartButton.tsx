@@ -28,7 +28,9 @@ export default function AddToCartButton({ producto }: Props) {
 
   return (
     <button
+      id={`btn-agregar-${producto.id}`}
       onClick={handleAdd}
+      aria-label={added ? `${producto.nombre} agregado al carrito` : `Agregar ${producto.nombre} al carrito`}
       className="btn-cart"
       style={{
         width: "100%",

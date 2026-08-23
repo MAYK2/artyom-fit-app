@@ -76,7 +76,9 @@ export default function CarritoPage() {
         </div>
 
         <button
+          id="btn-vaciar-carrito"
           onClick={clearCart}
+          aria-label="Vaciar carrito completo"
           style={{
             display: "flex", alignItems: "center", gap: 6,
             background: "rgba(239,68,68,0.08)", border: "1px solid rgba(239,68,68,0.2)",
@@ -138,6 +140,7 @@ export default function CarritoPage() {
                 {/* Controles cantidad */}
                 <div style={{ display: "flex", alignItems: "center", gap: 8, flexShrink: 0 }}>
                   <button
+                    aria-label={`Quitar una unidad de ${item.producto.nombre}`}
                     onClick={() => setQuantity(key, item.cantidad - 1)}
                     style={{
                       width: 28, height: 28, borderRadius: 6, border: "1px solid rgba(255,255,255,0.12)",
@@ -151,6 +154,7 @@ export default function CarritoPage() {
                     {item.cantidad}
                   </span>
                   <button
+                    aria-label={`Agregar una unidad más de ${item.producto.nombre}`}
                     onClick={() => setQuantity(key, item.cantidad + 1)}
                     style={{
                       width: 28, height: 28, borderRadius: 6, border: "1px solid rgba(13,202,240,0.3)",
@@ -168,6 +172,7 @@ export default function CarritoPage() {
                     {fmtPrecio(subtotal)}
                   </p>
                   <button
+                    aria-label={`Eliminar ${item.producto.nombre} del carrito`}
                     onClick={() => removeFromCart(key)}
                     style={{
                       background: "none", border: "none", color: "#475569", cursor: "pointer",
@@ -226,7 +231,9 @@ export default function CarritoPage() {
 
           {/* CTA WhatsApp */}
           <button
+            id="btn-pedido-whatsapp"
             onClick={handlePedidoWA}
+            aria-label="Hacer pedido por WhatsApp"
             style={{
               width: "100%", padding: "14px", borderRadius: 12,
               background: "linear-gradient(135deg, #25D366, #128C7E)",
