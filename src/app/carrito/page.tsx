@@ -90,7 +90,7 @@ export default function CarritoPage() {
         </button>
       </div>
 
-      <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: 24 }}>
+      <div className="grid grid-cols-1 lg:grid-cols-[1fr_350px] gap-6 lg:items-start">
 
         {/* Lista de items */}
         <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
@@ -98,89 +98,92 @@ export default function CarritoPage() {
             const key = itemKey(item.producto);
             const subtotal = item.producto.precio * item.cantidad;
             return (
-              <div key={key} style={{
-                display: "flex", alignItems: "center", gap: 16,
+              <div key={key} className="flex flex-col sm:flex-row sm:items-center gap-4" style={{
                 background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.07)",
                 borderRadius: 12, padding: "16px",
                 transition: "border-color 0.2s",
               }}>
-                {/* Imagen */}
-                <div style={{
-                  width: 72, height: 72, flexShrink: 0, borderRadius: 8,
-                  background: "rgba(255,255,255,0.05)", position: "relative", overflow: "hidden",
-                }}>
-                  {item.producto.imagen ? (
-                    <Image src={item.producto.imagen} alt={item.producto.nombre} fill
-                      style={{ objectFit: "contain", padding: 6 }} sizes="72px" />
-                  ) : (
-                    <div style={{ display: "flex", alignItems: "center", justifyContent: "center", height: "100%", fontSize: "1.8rem", opacity: 0.3 }}>
-                      {item.producto.tipo === "ropa" ? "👕" : "💊"}
-                    </div>
-                  )}
+                <div className="flex items-center gap-4 flex-1 min-w-0">
+                  {/* Imagen */}
+                  <div style={{
+                    width: 72, height: 72, flexShrink: 0, borderRadius: 8,
+                    background: "rgba(255,255,255,0.05)", position: "relative", overflow: "hidden",
+                  }}>
+                    {item.producto.imagen ? (
+                      <Image src={item.producto.imagen} alt={item.producto.nombre} fill
+                        style={{ objectFit: "contain", padding: 6 }} sizes="72px" />
+                    ) : (
+                      <div style={{ display: "flex", alignItems: "center", justifyContent: "center", height: "100%", fontSize: "1.8rem", opacity: 0.3 }}>
+                        {item.producto.tipo === "ropa" ? "👕" : "💊"}
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Info */}
+                  <div style={{ flex: 1, minWidth: 0 }}>
+                    <p style={{ fontWeight: 700, color: "#f1f5f9", margin: 0, fontSize: "0.9rem", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
+                      {item.producto.nombre}
+                    </p>
+                    {item.producto.variante && (
+                      <span style={{
+                        fontSize: "0.7rem", color: "#0dcaf0", fontWeight: 600,
+                        background: "rgba(13,202,240,0.1)", padding: "1px 7px", borderRadius: 4, marginTop: 2, display: "inline-block",
+                      }}>
+                        {item.producto.variante}
+                      </span>
+                    )}
+                    <p style={{ color: "#64748b", margin: "4px 0 0", fontSize: "0.8rem" }}>
+                      {fmtPrecio(item.producto.precio)} c/u
+                    </p>
+                  </div>
                 </div>
 
-                {/* Info */}
-                <div style={{ flex: 1, minWidth: 0 }}>
-                  <p style={{ fontWeight: 700, color: "#f1f5f9", margin: 0, fontSize: "0.9rem", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
-                    {item.producto.nombre}
-                  </p>
-                  {item.producto.variante && (
-                    <span style={{
-                      fontSize: "0.7rem", color: "#0dcaf0", fontWeight: 600,
-                      background: "rgba(13,202,240,0.1)", padding: "1px 7px", borderRadius: 4, marginTop: 2, display: "inline-block",
-                    }}>
-                      {item.producto.variante}
+                <div className="flex items-center justify-between sm:justify-end gap-4 sm:gap-6 flex-shrink-0 border-t border-white/5 pt-3 sm:border-0 sm:pt-0 mt-1 sm:mt-0">
+                  {/* Controles cantidad */}
+                  <div style={{ display: "flex", alignItems: "center", gap: 8, flexShrink: 0 }}>
+                    <button
+                      aria-label={`Quitar una unidad de ${item.producto.nombre}`}
+                      onClick={() => setQuantity(key, item.cantidad - 1)}
+                      style={{
+                        width: 28, height: 28, borderRadius: 6, border: "1px solid rgba(255,255,255,0.12)",
+                        background: "rgba(255,255,255,0.05)", color: "#94a3b8", cursor: "pointer",
+                        display: "flex", alignItems: "center", justifyContent: "center",
+                      }}
+                    >
+                      <Minus size={12} />
+                    </button>
+                    <span style={{ minWidth: 20, textAlign: "center", fontWeight: 700, color: "#f1f5f9", fontSize: "0.9rem" }}>
+                      {item.cantidad}
                     </span>
-                  )}
-                  <p style={{ color: "#64748b", margin: "4px 0 0", fontSize: "0.8rem" }}>
-                    {fmtPrecio(item.producto.precio)} c/u
-                  </p>
-                </div>
+                    <button
+                      aria-label={`Agregar una unidad más de ${item.producto.nombre}`}
+                      onClick={() => setQuantity(key, item.cantidad + 1)}
+                      style={{
+                        width: 28, height: 28, borderRadius: 6, border: "1px solid rgba(13,202,240,0.3)",
+                        background: "rgba(13,202,240,0.1)", color: "#0dcaf0", cursor: "pointer",
+                        display: "flex", alignItems: "center", justifyContent: "center",
+                      }}
+                    >
+                      <Plus size={12} />
+                    </button>
+                  </div>
 
-                {/* Controles cantidad */}
-                <div style={{ display: "flex", alignItems: "center", gap: 8, flexShrink: 0 }}>
-                  <button
-                    aria-label={`Quitar una unidad de ${item.producto.nombre}`}
-                    onClick={() => setQuantity(key, item.cantidad - 1)}
-                    style={{
-                      width: 28, height: 28, borderRadius: 6, border: "1px solid rgba(255,255,255,0.12)",
-                      background: "rgba(255,255,255,0.05)", color: "#94a3b8", cursor: "pointer",
-                      display: "flex", alignItems: "center", justifyContent: "center",
-                    }}
-                  >
-                    <Minus size={12} />
-                  </button>
-                  <span style={{ minWidth: 20, textAlign: "center", fontWeight: 700, color: "#f1f5f9", fontSize: "0.9rem" }}>
-                    {item.cantidad}
-                  </span>
-                  <button
-                    aria-label={`Agregar una unidad más de ${item.producto.nombre}`}
-                    onClick={() => setQuantity(key, item.cantidad + 1)}
-                    style={{
-                      width: 28, height: 28, borderRadius: 6, border: "1px solid rgba(13,202,240,0.3)",
-                      background: "rgba(13,202,240,0.1)", color: "#0dcaf0", cursor: "pointer",
-                      display: "flex", alignItems: "center", justifyContent: "center",
-                    }}
-                  >
-                    <Plus size={12} />
-                  </button>
-                </div>
-
-                {/* Subtotal + eliminar */}
-                <div style={{ textAlign: "right", flexShrink: 0 }}>
-                  <p style={{ fontWeight: 800, color: "#0dcaf0", margin: 0, fontSize: "0.95rem" }}>
-                    {fmtPrecio(subtotal)}
-                  </p>
-                  <button
-                    aria-label={`Eliminar ${item.producto.nombre} del carrito`}
-                    onClick={() => removeFromCart(key)}
-                    style={{
-                      background: "none", border: "none", color: "#475569", cursor: "pointer",
-                      padding: "4px 0", fontSize: "0.75rem", display: "flex", alignItems: "center", gap: 3, marginTop: 4,
-                    }}
-                  >
-                    <Trash2 size={11} /> quitar
-                  </button>
+                  {/* Subtotal + eliminar */}
+                  <div style={{ textAlign: "right", flexShrink: 0 }}>
+                    <p style={{ fontWeight: 800, color: "#0dcaf0", margin: 0, fontSize: "0.95rem" }}>
+                      {fmtPrecio(subtotal)}
+                    </p>
+                    <button
+                      aria-label={`Eliminar ${item.producto.nombre} del carrito`}
+                      onClick={() => removeFromCart(key)}
+                      style={{
+                        background: "none", border: "none", color: "#475569", cursor: "pointer",
+                        padding: "4px 0", fontSize: "0.75rem", display: "flex", alignItems: "center", gap: 3, marginTop: 4,
+                      }}
+                    >
+                      <Trash2 size={11} /> quitar
+                    </button>
+                  </div>
                 </div>
               </div>
             );
