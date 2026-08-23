@@ -10,7 +10,7 @@ import { useCart } from "@/context/CartContext";
 const navLinks = [
   { label: "Suplementos", href: "/" },
   { label: "Ropa", href: "/ropa" },
-  { label: "Contacto", href: "/contacto" },
+  { label: "Contacto", href: "https://wa.me/5492645085444?text=Hola%2C+quiero+hacer+una+consulta" },
 ];
 
 export default function Navbar() {
@@ -64,7 +64,7 @@ export default function Navbar() {
               const active = pathname === l.href;
               return (
                 <li key={l.href}>
-                  <Link href={l.href} style={{
+                  <Link href={l.href} target={l.href.startsWith("http") ? "_blank" : undefined} style={{
                     padding: "8px 16px",
                     borderRadius: 8,
                     fontSize: "0.85rem",
@@ -134,7 +134,7 @@ export default function Navbar() {
           {navLinks.map((l) => {
             const active = pathname === l.href;
             return (
-              <Link key={l.href} href={l.href}
+              <Link key={l.href} href={l.href} target={l.href.startsWith("http") ? "_blank" : undefined}
                 onClick={() => setMenuOpen(false)}
                 style={{
                   padding: "12px 16px", borderRadius: 8,
