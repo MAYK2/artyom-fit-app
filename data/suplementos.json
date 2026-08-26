@@ -3,11 +3,11 @@
     "id": "whey-platinum-star-2lb",
     "marca": "Star Nutrition",
     "nombre": "Star Nutrition Whey Platinum 2lb Doy Pack",
-    "precio": 90000,
+    "precio": 75000,
     "imagen": "/productos/star-whey-chocolate-2lb.jpg",
     "categoria": "Proteína",
     "stock": true,
-    "descripcion": "La Platinum Whey Protein de Star Nutrition es una proteína de suero de leche de alta calidad, elaborada con una mezcla de Whey Concentrate y Whey Isolate para maximizar la absorción de aminoácidos. Con más de 20g de proteína por porción, es ideal para la recuperación muscular post-entrenamiento y para alcanzar los requerimientos proteicos diarios. Su textura suave y su gran variedad de sabores la convierten en una de las más vendidas del mercado. Libre de gluten y sin azúcar agregada. Formato Doy Pack de 2 lb (aprox. 907g), perfecto para llevar al gym o guardar en casa."
+    "descripcion": "La Platinum Whey Protein de Star Nutrition es una proteína de suero de leche de alta calidad, ideal para la recuperación muscular post-entrenamiento. Elaborada con una mezcla de Whey Concentrate y Whey Isolate para maximizar la absorción de aminoácidos. Sabores disponibles: Cookies & Cream (tipo Oreo) y Chocolate. Libre de gluten y sin azúcar agregada. Formato Doy Pack de 2 lb (aprox. 907g)."
   },
   {
     "id": "tnt-dynamite-star-240g",
@@ -58,15 +58,5 @@
     "categoria": "Accesorios",
     "stock": true,
     "descripcion": "El Shaker Espiral de Xtrenght Nutrition es el compañero ideal para preparar tus batidos de proteína, creatina o pre-workout sin grumos. Su sistema de resorte en espiral mezcla de manera efectiva cualquier polvo, logrando una textura perfectamente homogénea. Capacidad de 600ml con graduaciones marcadas para medir líquidos con precisión. Tapa a rosca hermética, resistente a caídas y fácil de limpiar. Sin BPA."
-  },
-  {
-    "id": "whey-protein-star-2lb",
-    "marca": "Star Nutrition",
-    "nombre": "Star Nutrition Whey Protein 2lb Doy Pack",
-    "precio": 75000,
-    "imagen": "/productos/star-whey-chocolate-2lb.jpg",
-    "categoria": "Proteína",
-    "stock": true,
-    "descripcion": "La Whey Protein clásica de Star Nutrition es ideal para la recuperación muscular. Aporta proteínas de alta calidad con un perfil completo de aminoácidos. Formato Doy Pack de 2 lb."
   }
 ]
