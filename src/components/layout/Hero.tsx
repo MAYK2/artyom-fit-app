@@ -110,7 +110,7 @@ export default function Hero() {
               letterSpacing: "-0.02em",
               margin: 0,
             }}>
-              Envíos a todo <br/> el país <Truck size={36} color="#eab308" style={{ display: "inline", verticalAlign: "middle", marginLeft: 8 }}/>
+              Despachamos a toda <br/> la Argentina <Truck size={36} color="#eab308" style={{ display: "inline", verticalAlign: "middle", marginLeft: 8 }}/>
             </h2>
             
             <p style={{
@@ -121,7 +121,7 @@ export default function Hero() {
               lineHeight: 1.2,
               textTransform: "uppercase",
             }}>
-              Y si sos del <strong style={{ color: "#f8fafc" }}>Gran San Juan</strong>...
+              ¿Vivís en <strong style={{ color: "#f8fafc" }}>San Juan Capital?</strong>...
             </p>
 
             <div style={{
@@ -135,7 +135,7 @@ export default function Hero() {
               textShadow: "0px 10px 30px rgba(13,202,240,0.3)",
               display: "flex", alignItems: "center", gap: 12,
             }}>
-              Te llega en <br/> menos de 1 hora
+              Entrega express <br/> en el día
             </div>
           </div>
         </div>
