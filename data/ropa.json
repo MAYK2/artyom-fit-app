@@ -40,7 +40,7 @@
   {
     "id": "ropa-bikerdama-2612",
     "nombre": "Biker Mujer",
-    "precio": 13200,
+    "precio": 14000,
     "imagen": "/productos/ropa/bikerdama.png",
     "categoria": "Deportiva",
     "genero": "Mujer",
@@ -59,7 +59,7 @@
   {
     "id": "ropa-bikerestampadadama-2612",
     "nombre": "Biker Estampada Mujer",
-    "precio": 13200,
+    "precio": 14000,
     "imagen": "/productos/ropa/bikerestampadadama.png",
     "categoria": "Deportiva",
     "genero": "Mujer",
@@ -135,7 +135,7 @@
   {
     "id": "ropa-bombachanena-2612",
     "nombre": "Bombacha Niña Clásica",
-    "precio": 3300,
+    "precio": 4000,
     "imagen": "/productos/ropa/bombachanena.png",
     "categoria": "Interior",
     "genero": "Mujer",
@@ -154,7 +154,7 @@
   {
     "id": "ropa-bombachainfantil-2612",
     "nombre": "Bombachainfantil",
-    "precio": 3300,
+    "precio": 4000,
     "imagen": "/productos/ropa/bombachainfantil.png",
     "categoria": "Interior",
     "genero": "Mujer",
@@ -173,7 +173,7 @@
   {
     "id": "ropa-bombachasadese-ora-2612",
     "nombre": "Bombacha Confort Clásica",
-    "precio": 5500,
+    "precio": 6000,
     "imagen": "/productos/ropa/bombachasadese-ora.png",
     "categoria": "Interior",
     "genero": "Mujer",
@@ -192,7 +192,7 @@
   {
     "id": "ropa-bombinena-2612",
     "nombre": "Bombacha Niña Clásica",
-    "precio": 3300,
+    "precio": 4000,
     "imagen": "/productos/ropa/bombinena.png",
     "categoria": "Interior",
     "genero": "Mujer",
@@ -249,7 +249,7 @@
   {
     "id": "ropa-calzadetallemorado-2612",
     "nombre": "Calza Detalle Morado",
-    "precio": 14850,
+    "precio": 15000,
     "imagen": "/productos/ropa/calzadetallemorado.png",
     "categoria": "Deportiva",
     "genero": "Mujer",
@@ -268,7 +268,7 @@
   {
     "id": "ropa-calzadetalleplateado-2613",
     "nombre": "Calza Detalle Plateado",
-    "precio": 14850,
+    "precio": 15000,
     "imagen": "/productos/ropa/calzadetalleplateado.png",
     "categoria": "Deportiva",
     "genero": "Mujer",
@@ -287,7 +287,7 @@
   {
     "id": "ropa-calzaestampada-2613",
     "nombre": "Calza Estampada",
-    "precio": 14850,
+    "precio": 15000,
     "imagen": "/productos/ropa/calzaestampada.png",
     "categoria": "Deportiva",
     "genero": "Mujer",
@@ -306,7 +306,7 @@
   {
     "id": "ropa-calzapescadora-2613",
     "nombre": "Calza Pescadora",
-    "precio": 14850,
+    "precio": 15000,
     "imagen": "/productos/ropa/calzapescadora.png",
     "categoria": "Deportiva",
     "genero": "Mujer",
@@ -344,7 +344,7 @@
   {
     "id": "ropa-colalesalgodon-2613",
     "nombre": "Colaless Algodon",
-    "precio": 3850,
+    "precio": 4000,
     "imagen": "/productos/ropa/colalesalgodon.png",
     "categoria": "Interior",
     "genero": "Mujer",
@@ -363,7 +363,7 @@
   {
     "id": "ropa-colalessdama-2613",
     "nombre": "Colaless Mujer",
-    "precio": 3850,
+    "precio": 4000,
     "imagen": "/productos/ropa/colalessdama.png",
     "categoria": "Interior",
     "genero": "Mujer",
@@ -382,7 +382,7 @@
   {
     "id": "ropa-colalessestampada-2613",
     "nombre": "Colaless Estampada",
-    "precio": 3850,
+    "precio": 4000,
     "imagen": "/productos/ropa/colalessestampada.png",
     "categoria": "Interior",
     "genero": "Mujer",
@@ -401,7 +401,7 @@
   {
     "id": "ropa-colalesspuntilla-2613",
     "nombre": "Colaless Puntilla",
-    "precio": 3850,
+    "precio": 4000,
     "imagen": "/productos/ropa/colalesspuntilla.png",
     "categoria": "Interior",
     "genero": "Mujer",
@@ -439,7 +439,7 @@
   {
     "id": "ropa-conjtriang-2613",
     "nombre": "Conjunto Triang",
-    "precio": 9900,
+    "precio": 10000,
     "imagen": "/productos/ropa/conjtriang.png",
     "categoria": "Interior",
     "genero": "Mujer",
@@ -458,7 +458,7 @@
   {
     "id": "ropa-conjuntitriangulo-2613",
     "nombre": "Conjunto Triangulo",
-    "precio": 9900,
+    "precio": 10000,
     "imagen": "/productos/ropa/conjuntitriangulo.png",
     "categoria": "Interior",
     "genero": "Mujer",
@@ -553,7 +553,7 @@
   {
     "id": "ropa-conjuntotrianguliti-2613",
     "nombre": "Conjunto Triangulito",
-    "precio": 9900,
+    "precio": 10000,
     "imagen": "/productos/ropa/conjuntotrianguliti.png",
     "categoria": "Interior",
     "genero": "Mujer",
@@ -572,7 +572,7 @@
   {
     "id": "ropa-conjuntotriangulito-2614",
     "nombre": "Conjunto Triangulito",
-    "precio": 9900,
+    "precio": 10000,
     "imagen": "/productos/ropa/conjuntotriangulito.png",
     "categoria": "Interior",
     "genero": "Mujer",
@@ -591,7 +591,7 @@
   {
     "id": "ropa-damamusculosa-2614",
     "nombre": "Mujer Musculosa",
-    "precio": 9900,
+    "precio": 10000,
     "imagen": "/productos/ropa/damamusculosa.png",
     "categoria": "Deportiva",
     "genero": "Mujer",
@@ -743,7 +743,7 @@
   {
     "id": "ropa-musculosacombinadahombre-2614",
     "nombre": "Musculosa Combinada Hombre",
-    "precio": 8625,
+    "precio": 9000,
     "imagen": "/productos/ropa/musculosacombinadahombre.png",
     "categoria": "Deportiva",
     "genero": "Hombre",
@@ -762,7 +762,7 @@
   {
     "id": "ropa-musculosadama-2614",
     "nombre": "Musculosa Mujer",
-    "precio": 9900,
+    "precio": 10000,
     "imagen": "/productos/ropa/musculosadama.png",
     "categoria": "Deportiva",
     "genero": "Mujer",
@@ -781,7 +781,7 @@
   {
     "id": "ropa-musculosadamaceleste-2614",
     "nombre": "Musculosa Mujer Celeste",
-    "precio": 9350,
+    "precio": 10000,
     "imagen": "/productos/ropa/musculosadamaceleste.png",
     "categoria": "Deportiva",
     "genero": "Mujer",
@@ -800,7 +800,7 @@
   {
     "id": "ropa-musculosahombrecombinada-2614",
     "nombre": "Musculosa Hombre Combinada",
-    "precio": 8625,
+    "precio": 9000,
     "imagen": "/productos/ropa/musculosahombrecombinada.png",
     "categoria": "Deportiva",
     "genero": "Hombre",
@@ -838,7 +838,7 @@
   {
     "id": "ropa-pescadoradama-2615",
     "nombre": "Pescadora Mujer",
-    "precio": 14850,
+    "precio": 15000,
     "imagen": "/productos/ropa/pescadoradama.png",
     "categoria": "Deportiva",
     "genero": "Mujer",
@@ -1009,7 +1009,7 @@
   {
     "id": "ropa-shortdeporhombre-2615",
     "nombre": "Short Depor Hombre",
-    "precio": 8625,
+    "precio": 9000,
     "imagen": "/productos/ropa/shortdeporhombre.png",
     "categoria": "Deportiva",
     "genero": "Hombre",
@@ -1028,7 +1028,7 @@
   {
     "id": "ropa-shortdeportivohombre-2615",
     "nombre": "Short Deportivo Hombre",
-    "precio": 8625,
+    "precio": 9000,
     "imagen": "/productos/ropa/shortdeportivohombre.png",
     "categoria": "Deportiva",
     "genero": "Hombre",
@@ -1047,7 +1047,7 @@
   {
     "id": "ropa-shortdeportivorojo-2615",
     "nombre": "Short Deportivo Rojo",
-    "precio": 7500,
+    "precio": 8000,
     "imagen": "/productos/ropa/shortdeportivorojo.png",
     "categoria": "Deportiva",
     "genero": "Unisex",
