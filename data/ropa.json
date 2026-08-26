@@ -1,24 +1,5 @@
 [
   {
-    "id": "ropa-1787684277661-1--2611",
-    "nombre": "Prenda Deportiva (Por Definir)",
-    "precio": 0,
-    "imagen": "/productos/ropa/1787684277661-1-.png",
-    "categoria": "Deportiva",
-    "genero": "Unisex",
-    "stock": true,
-    "talles": [
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "colores": [
-      "A definir"
-    ],
-    "descripcion": "Indumentaria deportiva de alta performance. Tejido diseñado para acompañar tus movimientos, brindando máximo confort durante tus entrenamientos."
-  },
-  {
     "id": "ropa-biker-2611",
     "nombre": "Biker",
     "precio": 15000,
