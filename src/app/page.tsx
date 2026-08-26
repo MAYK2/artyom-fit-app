@@ -17,9 +17,9 @@ export default function HomePage() {
       <section id="catalogo" style={{ background: "#020617" }}>
         <div className="max-w-7xl mx-auto px-4 pt-12 pb-4 text-center">
           <h2 className="text-3xl font-black mb-2" style={{ color: "#f1f5f9" }}>
-            Suplementos <span style={{ color: "#0dcaf0" }}>Deportivos</span>
+            Suplementos <span style={{ color: "#eab308" }}>Deportivos</span>
           </h2>
-          <div className="cyan-line mt-3 mb-1" />
+          <div className="gold-line mt-3 mb-1" />
         </div>
         <CatalogoGrid productos={productos} categorias={categorias} />
       </section>
@@ -28,9 +28,9 @@ export default function HomePage() {
       <section style={{ background: "#0f172a", borderTop: "1px solid rgba(13,202,240,0.1)", paddingBottom: "80px" }}>
         <div className="max-w-7xl mx-auto px-4 pt-16 pb-8 text-center">
           <h2 className="text-3xl font-black mb-2" style={{ color: "#f1f5f9" }}>
-            Indumentaria <span style={{ color: "#0dcaf0" }}>Premium</span>
+            Indumentaria <span style={{ color: "#eab308" }}>Premium</span>
           </h2>
-          <div className="cyan-line mt-3 mb-8" />
+          <div className="gold-line mt-3 mb-8" />
           
           <div style={{
             display: "grid",

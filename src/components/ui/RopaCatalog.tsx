@@ -39,8 +39,8 @@ export default function RopaCatalog({ items }: Props) {
             <h4 style={{ color: "#94a3b8", fontSize: "0.85rem", fontWeight: 600, marginBottom: 12, textTransform: "uppercase" }}>Categoría</h4>
             <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
               {categorias.map(cat => (
-                <label key={cat} style={{ display: "flex", alignItems: "center", gap: 8, cursor: "pointer", color: categoria === cat ? "#0dcaf0" : "#cbd5e1" }}>
-                  <input type="radio" name="categoria" checked={categoria === cat} onChange={() => setCategoria(cat)} style={{ accentColor: "#0dcaf0" }} />
+                <label key={cat} style={{ display: "flex", alignItems: "center", gap: 8, cursor: "pointer", color: categoria === cat ? "#eab308" : "#cbd5e1" }}>
+                  <input type="radio" name="categoria" checked={categoria === cat} onChange={() => setCategoria(cat)} style={{ accentColor: "#eab308" }} />
                   <span style={{ fontSize: "0.9rem" }}>{cat}</span>
                 </label>
               ))}
@@ -51,8 +51,8 @@ export default function RopaCatalog({ items }: Props) {
             <h4 style={{ color: "#94a3b8", fontSize: "0.85rem", fontWeight: 600, marginBottom: 12, textTransform: "uppercase" }}>Género</h4>
             <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
               {generos.map(gen => (
-                <label key={gen} style={{ display: "flex", alignItems: "center", gap: 8, cursor: "pointer", color: genero === gen ? "#0dcaf0" : "#cbd5e1" }}>
-                  <input type="radio" name="genero" checked={genero === gen} onChange={() => setGenero(gen)} style={{ accentColor: "#0dcaf0" }} />
+                <label key={gen} style={{ display: "flex", alignItems: "center", gap: 8, cursor: "pointer", color: genero === gen ? "#eab308" : "#cbd5e1" }}>
+                  <input type="radio" name="genero" checked={genero === gen} onChange={() => setGenero(gen)} style={{ accentColor: "#eab308" }} />
                   <span style={{ fontSize: "0.9rem" }}>{gen}</span>
                 </label>
               ))}
@@ -71,7 +71,7 @@ export default function RopaCatalog({ items }: Props) {
         ) : (
           <>
             <p style={{ fontSize: "0.85rem", color: "#64748b", marginBottom: 20 }}>
-              Mostrando <strong style={{ color: "#0dcaf0" }}>{filteredItems.length}</strong> artículos
+              Mostrando <strong style={{ color: "#eab308" }}>{filteredItems.length}</strong> artículos
             </p>
             <div style={{
               display: "grid",

@@ -34,7 +34,7 @@ export default function Hero() {
             textShadow: "0 2px 10px rgba(0,0,0,0.5)",
           }}>
             TENEMOS PUNTOS DE VENTA EN <br/>
-            <span style={{ color: "#0dcaf0" }}>RIVADAVIA Y SANTA LUCIA</span>
+            <span style={{ color: "#eab308" }}>RIVADAVIA Y SANTA LUCIA</span>
           </h1>
         </div>
 
@@ -73,7 +73,7 @@ export default function Hero() {
               {/* Pantalla de mapa simulado */}
               <div style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0, opacity: 0.2, backgroundImage: "linear-gradient(#334155 1px, transparent 1px), linear-gradient(90deg, #334155 1px, transparent 1px)", backgroundSize: "20px 20px" }} />
               
-              <MapPin size={48} color="#0dcaf0" style={{ position: "relative", zIndex: 2, marginBottom: 8 }} />
+              <MapPin size={48} color="#eab308" style={{ position: "relative", zIndex: 2, marginBottom: 8 }} />
               <div style={{
                 background: "rgba(2,6,23,0.8)", padding: "8px 16px", borderRadius: 8,
                 border: "1px solid rgba(13,202,240,0.3)", position: "relative", zIndex: 2
@@ -110,7 +110,7 @@ export default function Hero() {
               letterSpacing: "-0.02em",
               margin: 0,
             }}>
-              Envíos a todo <br/> el país <Truck size={36} color="#0dcaf0" style={{ display: "inline", verticalAlign: "middle", marginLeft: 8 }}/>
+              Envíos a todo <br/> el país <Truck size={36} color="#eab308" style={{ display: "inline", verticalAlign: "middle", marginLeft: 8 }}/>
             </h2>
             
             <p style={{
@@ -125,7 +125,7 @@ export default function Hero() {
             </p>
 
             <div style={{
-              background: "linear-gradient(90deg, #0dcaf0 0%, #3b82f6 100%)",
+              background: "linear-gradient(90deg, #eab308 0%, #3b82f6 100%)",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
               fontSize: "clamp(2.5rem, 5vw, 4.5rem)",

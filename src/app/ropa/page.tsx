@@ -23,7 +23,7 @@ export default function RopaPage() {
           👕 Indumentaria deportiva
         </span>
         <h1 style={{ fontSize: "clamp(1.8rem, 4vw, 3rem)", fontWeight: 900, color: "#f1f5f9", marginTop: 12 }}>
-          Ropa <span style={{ color: "#0dcaf0" }}>Deportiva</span>
+          Ropa <span style={{ color: "#eab308" }}>Deportiva</span>
         </h1>
         <p style={{ color: "#64748b", marginTop: 12, fontSize: "0.95rem" }}>
           Performance y estilo para tus entrenamientos

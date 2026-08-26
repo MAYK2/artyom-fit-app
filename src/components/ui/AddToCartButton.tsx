@@ -37,7 +37,7 @@ export default function AddToCartButton({ producto }: Props) {
         marginTop: 4,
         background: added ? "rgba(34,197,94,0.15)" : "rgba(13,202,240,0.1)",
         border: `1px solid ${added ? "#22c55e" : "rgba(13,202,240,0.3)"}`,
-        color: added ? "#22c55e" : "#0dcaf0",
+        color: added ? "#22c55e" : "#eab308",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",

@@ -53,7 +53,7 @@ export default async function ProductoPage({ params }: { params: Promise<{ id: s
         >
           <ArrowLeft size={15} /> Volver al catálogo
         </Link>
-        <style>{`.back-link:hover { color: #0dcaf0; }`}</style>
+        <style>{`.back-link:hover { color: #eab308; }`}</style>
       </div>
 
       {/* Contenido principal */}
@@ -125,10 +125,10 @@ export default async function ProductoPage({ params }: { params: Promise<{ id: s
             alignItems: "center",
             gap: 12,
           }}>
-            <Tag size={20} color="#0dcaf0" />
+            <Tag size={20} color="#eab308" />
             <div>
               <p style={{ fontSize: "0.7rem", color: "#64748b", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.06em" }}>Precio Artyom</p>
-              <p style={{ fontSize: "2rem", fontWeight: 900, color: "#0dcaf0", lineHeight: 1 }}>
+              <p style={{ fontSize: "2rem", fontWeight: 900, color: "#eab308", lineHeight: 1 }}>
                 {formatPrecio(producto.precioArtyom)}
               </p>
             </div>

@@ -29,7 +29,7 @@ export default function Navbar() {
     }}>
       {/* Announcement Bar */}
       <div style={{
-        background: "linear-gradient(90deg, #1e3a8a 0%, #0dcaf0 50%, #1e3a8a 100%)",
+        background: "linear-gradient(90deg, #1e3a8a 0%, #eab308 50%, #1e3a8a 100%)",
         color: "#020617",
         textAlign: "center",
         padding: "6px 20px",
@@ -91,7 +91,7 @@ export default function Navbar() {
                     fontSize: "0.85rem",
                     fontWeight: active ? 700 : 500,
                     textDecoration: "none",
-                    color: active ? "#0dcaf0" : "#94a3b8",
+                    color: active ? "#eab308" : "#94a3b8",
                     background: active ? "rgba(13,202,240,0.08)" : "transparent",
                     transition: "all 0.18s",
                     display: "block",
@@ -117,14 +117,14 @@ export default function Navbar() {
             padding: 8, color: "#94a3b8", transition: "color 0.2s",
             position: "relative",
           }}
-            onMouseEnter={(e) => (e.currentTarget.style.color = "#0dcaf0")}
+            onMouseEnter={(e) => (e.currentTarget.style.color = "#eab308")}
             onMouseLeave={(e) => (e.currentTarget.style.color = "#94a3b8")}
           >
             <ShoppingCart size={20} />
             {totalItems > 0 && (
               <span style={{
                 position: "absolute", top: 2, right: 2,
-                background: "#0dcaf0", color: "#020617",
+                background: "#eab308", color: "#020617",
                 borderRadius: "50%", width: 17, height: 17,
                 fontSize: "0.6rem", fontWeight: 800,
                 display: "flex", alignItems: "center", justifyContent: "center",
@@ -159,7 +159,7 @@ export default function Navbar() {
                 onClick={() => setMenuOpen(false)}
                 style={{
                   padding: "12px 16px", borderRadius: 8,
-                  color: active ? "#0dcaf0" : "#94a3b8",
+                  color: active ? "#eab308" : "#94a3b8",
                   background: active ? "rgba(13,202,240,0.08)" : "transparent",
                   textDecoration: "none",
                   fontSize: "1rem", fontWeight: active ? 700 : 500,

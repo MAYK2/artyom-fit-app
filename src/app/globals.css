@@ -7,9 +7,9 @@
   --bg-deep:     #020617;
   --bg-dark:     #0f172a;
   --bg-card:     #1e293b;
-  --cyan:        #0dcaf0;
-  --cyan-light:  #3dd5f3;
-  --cyan-glow:   rgba(13, 202, 240, 0.18);
+  --gold:        #eab308;
+  --gold-light:  #3dd5f3;
+  --gold-glow:   rgba(13, 202, 240, 0.18);
   --white:       #f1f5f9;
   --muted:       #64748b;
   --border:      rgba(255,255,255,0.08);
@@ -32,7 +32,7 @@ body {
 /* Scrollbar personalizado */
 ::-webkit-scrollbar { width: 5px; }
 ::-webkit-scrollbar-track { background: var(--bg-dark); }
-::-webkit-scrollbar-thumb { background: var(--cyan); border-radius: 99px; }
+::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 99px; }
 
 /* =====================
    COMPONENTES
@@ -44,7 +44,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 6px;
-  background: var(--cyan);
+  background: var(--gold);
   color: #020617;
   font-weight: 700;
   font-size: 0.875rem;
@@ -57,7 +57,7 @@ body {
   white-space: nowrap;
 }
 .btn-primary:hover {
-  background: var(--cyan-light);
+  background: var(--gold-light);
   transform: translateY(-1px);
 }
 
@@ -68,19 +68,19 @@ body {
   justify-content: center;
   gap: 6px;
   background: transparent;
-  color: var(--cyan);
+  color: var(--gold);
   font-weight: 600;
   font-size: 0.875rem;
   padding: 10px 22px;
   border-radius: 8px;
-  border: 1.5px solid var(--cyan);
+  border: 1.5px solid var(--gold);
   cursor: pointer;
   text-decoration: none;
   transition: background 0.2s;
   white-space: nowrap;
 }
 .btn-outline:hover {
-  background: var(--cyan-glow);
+  background: var(--gold-glow);
 }
 
 /* --- Chip / badge --- */
@@ -93,8 +93,8 @@ body {
   text-transform: uppercase;
   padding: 3px 10px;
   border-radius: 99px;
-  border: 1px solid var(--cyan);
-  color: var(--cyan);
+  border: 1px solid var(--gold);
+  color: var(--gold);
   background: rgba(13,202,240,0.08);
   white-space: nowrap;
 }
@@ -113,12 +113,12 @@ body {
   white-space: nowrap;
 }
 .filter-pill:hover {
-  border-color: var(--cyan);
-  color: var(--cyan);
+  border-color: var(--gold);
+  color: var(--gold);
 }
 .filter-pill.active {
-  background: var(--cyan);
-  border-color: var(--cyan);
+  background: var(--gold);
+  border-color: var(--gold);
   color: #020617;
   font-weight: 800;
 }
@@ -137,7 +137,7 @@ body {
   transition: border-color 0.2s;
 }
 .search-input:focus-within {
-  border-color: var(--cyan);
+  border-color: var(--gold);
 }
 .search-input input {
   background: transparent;
@@ -162,7 +162,7 @@ body {
 }
 .product-card:hover {
   transform: translateY(-5px);
-  border-color: var(--cyan);
+  border-color: var(--gold);
   box-shadow: 0 12px 32px rgba(13,202,240,0.15);
 }
 .product-card__img {
@@ -199,6 +199,6 @@ body {
 .product-card__price {
   font-size: 1.3rem;
   font-weight: 900;
-  color: var(--cyan);
+  color: var(--gold);
   margin-top: auto;
 }

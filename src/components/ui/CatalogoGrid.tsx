@@ -114,7 +114,7 @@ export default function CatalogoGrid({ productos, categorias }: CatalogoGridProp
       {/* ── GRID ── */}
       <div style={{ maxWidth: 1280, margin: "0 auto", padding: "28px 20px 60px" }}>
         <p style={{ fontSize: "0.8rem", color: "#475569", marginBottom: 20 }}>
-          <span style={{ color: "#0dcaf0", fontWeight: 700 }}>{filtrados.length}</span> producto{filtrados.length !== 1 ? "s" : ""} encontrado{filtrados.length !== 1 ? "s" : ""}
+          <span style={{ color: "#eab308", fontWeight: 700 }}>{filtrados.length}</span> producto{filtrados.length !== 1 ? "s" : ""} encontrado{filtrados.length !== 1 ? "s" : ""}
         </p>
 
         {filtrados.length === 0 ? (

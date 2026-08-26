@@ -36,7 +36,7 @@ export default function CarritoPage() {
           background: "rgba(13,202,240,0.08)", border: "1px solid rgba(13,202,240,0.15)",
           display: "flex", alignItems: "center", justifyContent: "center",
         }}>
-          <ShoppingCart size={32} color="#0dcaf0" opacity={0.5} />
+          <ShoppingCart size={32} color="#eab308" opacity={0.5} />
         </div>
         <h1 style={{ fontSize: "1.5rem", fontWeight: 700, color: "#f1f5f9", margin: 0 }}>
           Tu carrito está vacío
@@ -48,7 +48,7 @@ export default function CarritoPage() {
           display: "flex", alignItems: "center", gap: 8,
           padding: "12px 24px", borderRadius: 10,
           background: "rgba(13,202,240,0.1)", border: "1px solid rgba(13,202,240,0.3)",
-          color: "#0dcaf0", textDecoration: "none", fontWeight: 600, fontSize: "0.9rem",
+          color: "#eab308", textDecoration: "none", fontWeight: 600, fontSize: "0.9rem",
         }}>
           <ArrowLeft size={16} /> Ver suplementos
         </Link>
@@ -63,13 +63,13 @@ export default function CarritoPage() {
       {/* Header */}
       <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 32, flexWrap: "wrap", gap: 12 }}>
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-          <ShoppingBag size={24} color="#0dcaf0" />
+          <ShoppingBag size={24} color="#eab308" />
           <h1 style={{ fontSize: "1.5rem", fontWeight: 800, color: "#f1f5f9", margin: 0 }}>
             Mi carrito
           </h1>
           <span style={{
             background: "rgba(13,202,240,0.15)", border: "1px solid rgba(13,202,240,0.3)",
-            color: "#0dcaf0", borderRadius: 20, padding: "2px 10px", fontSize: "0.75rem", fontWeight: 700,
+            color: "#eab308", borderRadius: 20, padding: "2px 10px", fontSize: "0.75rem", fontWeight: 700,
           }}>
             {totalItems} {totalItems === 1 ? "ítem" : "ítems"}
           </span>
@@ -126,7 +126,7 @@ export default function CarritoPage() {
                     </p>
                     {item.producto.variante && (
                       <span style={{
-                        fontSize: "0.7rem", color: "#0dcaf0", fontWeight: 600,
+                        fontSize: "0.7rem", color: "#eab308", fontWeight: 600,
                         background: "rgba(13,202,240,0.1)", padding: "1px 7px", borderRadius: 4, marginTop: 2, display: "inline-block",
                       }}>
                         {item.producto.variante}
@@ -160,7 +160,7 @@ export default function CarritoPage() {
                       onClick={() => setQuantity(key, item.cantidad + 1)}
                       style={{
                         width: 28, height: 28, borderRadius: 6, border: "1px solid rgba(13,202,240,0.3)",
-                        background: "rgba(13,202,240,0.1)", color: "#0dcaf0", cursor: "pointer",
+                        background: "rgba(13,202,240,0.1)", color: "#eab308", cursor: "pointer",
                         display: "flex", alignItems: "center", justifyContent: "center",
                       }}
                     >
@@ -170,7 +170,7 @@ export default function CarritoPage() {
 
                   {/* Subtotal + eliminar */}
                   <div style={{ textAlign: "right", flexShrink: 0 }}>
-                    <p style={{ fontWeight: 800, color: "#0dcaf0", margin: 0, fontSize: "0.95rem" }}>
+                    <p style={{ fontWeight: 800, color: "#eab308", margin: 0, fontSize: "0.95rem" }}>
                       {fmtPrecio(subtotal)}
                     </p>
                     <button
@@ -219,7 +219,7 @@ export default function CarritoPage() {
           {/* Total */}
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
             <span style={{ fontWeight: 700, color: "#f1f5f9", fontSize: "1rem" }}>Total</span>
-            <span style={{ fontWeight: 900, color: "#0dcaf0", fontSize: "1.3rem" }}>
+            <span style={{ fontWeight: 900, color: "#eab308", fontSize: "1.3rem" }}>
               {fmtPrecio(totalPrice)}
             </span>
           </div>
