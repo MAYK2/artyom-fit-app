@@ -1,24 +1,1104 @@
 [
   {
-    "id": "remera-dry-fit-negra",
-    "nombre": "Remera Dry Fit",
-    "precio": 15000,
-    "imagen": null,
-    "categoria": "Remeras",
+    "id": "ropa-1787684277661-1--2611",
+    "nombre": "Prenda Deportiva (Por Definir)",
+    "precio": 0,
+    "imagen": "/productos/ropa/1787684277661-1-.png",
+    "categoria": "Deportiva",
+    "genero": "Unisex",
     "stock": true,
-    "talles": ["S", "M", "L", "XL", "XXL"],
-    "colores": ["Negro", "Blanco", "Gris"],
-    "descripcion": "Remera deportiva de tela dry fit de alta performance. Tejido liviano y transpirable que aleja la humedad del cuerpo, ideal para entrenamiento de alta intensidad. Diseño ergonómico con costuras planas para máxima comodidad. Disponible en múltiples talles y colores."
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Indumentaria deportiva de alta performance. Tejido diseñado para acompañar tus movimientos, brindando máximo confort durante tus entrenamientos."
   },
   {
-    "id": "short-deportivo-negro",
-    "nombre": "Short Deportivo",
-    "precio": 18000,
-    "imagen": null,
-    "categoria": "Shorts",
+    "id": "ropa-biker-2611",
+    "nombre": "Biker",
+    "precio": 15000,
+    "imagen": "/productos/ropa/biker.png",
+    "categoria": "Deportiva",
+    "genero": "Mujer",
     "stock": true,
-    "talles": ["S", "M", "L", "XL"],
-    "colores": ["Negro", "Gris"],
-    "descripcion": "Short deportivo con tela dry fit elástica de cuatro vías. Cintura ajustable con cordón, bolsillos laterales y malla interior. Ideal para gym, running o cualquier actividad física. Tela liviana y de secado rápido."
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Indumentaria deportiva de alta performance. Tejido diseñado para acompañar tus movimientos, brindando máximo confort durante tus entrenamientos."
+  },
+  {
+    "id": "ropa-bikerazul-2612",
+    "nombre": "Biker Azul",
+    "precio": 15000,
+    "imagen": "/productos/ropa/bikerazul.png",
+    "categoria": "Deportiva",
+    "genero": "Mujer",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Indumentaria deportiva de alta performance. Tejido diseñado para acompañar tus movimientos, brindando máximo confort durante tus entrenamientos."
+  },
+  {
+    "id": "ropa-bikerdama-2612",
+    "nombre": "Biker Mujer",
+    "precio": 12000,
+    "imagen": "/productos/ropa/bikerdama.png",
+    "categoria": "Deportiva",
+    "genero": "Mujer",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Indumentaria deportiva de alta performance. Tejido diseñado para acompañar tus movimientos, brindando máximo confort durante tus entrenamientos."
+  },
+  {
+    "id": "ropa-bikerestampadadama-2612",
+    "nombre": "Biker Estampada Mujer",
+    "precio": 12000,
+    "imagen": "/productos/ropa/bikerestampadadama.png",
+    "categoria": "Deportiva",
+    "genero": "Mujer",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Indumentaria deportiva de alta performance. Tejido diseñado para acompañar tus movimientos, brindando máximo confort durante tus entrenamientos."
+  },
+  {
+    "id": "ropa-bikernegra-2612",
+    "nombre": "Biker Negra",
+    "precio": 15000,
+    "imagen": "/productos/ropa/bikernegra.png",
+    "categoria": "Deportiva",
+    "genero": "Mujer",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Indumentaria deportiva de alta performance. Tejido diseñado para acompañar tus movimientos, brindando máximo confort durante tus entrenamientos."
+  },
+  {
+    "id": "ropa-bikerroja-2612",
+    "nombre": "Biker Roja",
+    "precio": 15000,
+    "imagen": "/productos/ropa/bikerroja.png",
+    "categoria": "Deportiva",
+    "genero": "Mujer",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Indumentaria deportiva de alta performance. Tejido diseñado para acompañar tus movimientos, brindando máximo confort durante tus entrenamientos."
+  },
+  {
+    "id": "ropa-bikerrosa-2612",
+    "nombre": "Biker Rosa",
+    "precio": 15000,
+    "imagen": "/productos/ropa/bikerrosa.png",
+    "categoria": "Deportiva",
+    "genero": "Mujer",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Indumentaria deportiva de alta performance. Tejido diseñado para acompañar tus movimientos, brindando máximo confort durante tus entrenamientos."
+  },
+  {
+    "id": "ropa-bombachanena-2612",
+    "nombre": "Bombacha Niña Clásica",
+    "precio": 3000,
+    "imagen": "/productos/ropa/bombachanena.png",
+    "categoria": "Interior",
+    "genero": "Mujer",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Ropa interior confeccionada con materiales suaves y respirables para garantizar la máxima comodidad durante todo el día. Ajuste perfecto y diseño moderno."
+  },
+  {
+    "id": "ropa-bombachainfantil-2612",
+    "nombre": "Bombachainfantil",
+    "precio": 3000,
+    "imagen": "/productos/ropa/bombachainfantil.png",
+    "categoria": "Interior",
+    "genero": "Mujer",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Ropa interior confeccionada con materiales suaves y respirables para garantizar la máxima comodidad durante todo el día. Ajuste perfecto y diseño moderno."
+  },
+  {
+    "id": "ropa-bombachasadese-ora-2612",
+    "nombre": "Bombacha Confort Clásica",
+    "precio": 5000,
+    "imagen": "/productos/ropa/bombachasadese-ora.png",
+    "categoria": "Interior",
+    "genero": "Mujer",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Ropa interior confeccionada con materiales suaves y respirables para garantizar la máxima comodidad durante todo el día. Ajuste perfecto y diseño moderno."
+  },
+  {
+    "id": "ropa-bombinena-2612",
+    "nombre": "Bombacha Niña Clásica",
+    "precio": 3000,
+    "imagen": "/productos/ropa/bombinena.png",
+    "categoria": "Interior",
+    "genero": "Mujer",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Ropa interior confeccionada con materiales suaves y respirables para garantizar la máxima comodidad durante todo el día. Ajuste perfecto y diseño moderno."
+  },
+  {
+    "id": "ropa-boxers-2612",
+    "nombre": "Boxers",
+    "precio": 5000,
+    "imagen": "/productos/ropa/boxers.png",
+    "categoria": "Interior",
+    "genero": "Hombre",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Ropa interior confeccionada con materiales suaves y respirables para garantizar la máxima comodidad durante todo el día. Ajuste perfecto y diseño moderno."
+  },
+  {
+    "id": "ropa-buzohombre-2612",
+    "nombre": "Buzo Hombre",
+    "precio": 30000,
+    "imagen": "/productos/ropa/buzohombre.png",
+    "categoria": "Deportiva",
+    "genero": "Hombre",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Indumentaria deportiva de alta performance. Tejido diseñado para acompañar tus movimientos, brindando máximo confort durante tus entrenamientos."
+  },
+  {
+    "id": "ropa-calzadetallemorado-2612",
+    "nombre": "Calza Detalle Morado",
+    "precio": 13500,
+    "imagen": "/productos/ropa/calzadetallemorado.png",
+    "categoria": "Deportiva",
+    "genero": "Mujer",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Indumentaria deportiva de alta performance. Tejido diseñado para acompañar tus movimientos, brindando máximo confort durante tus entrenamientos."
+  },
+  {
+    "id": "ropa-calzadetalleplateado-2613",
+    "nombre": "Calza Detalle Plateado",
+    "precio": 13500,
+    "imagen": "/productos/ropa/calzadetalleplateado.png",
+    "categoria": "Deportiva",
+    "genero": "Mujer",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Indumentaria deportiva de alta performance. Tejido diseñado para acompañar tus movimientos, brindando máximo confort durante tus entrenamientos."
+  },
+  {
+    "id": "ropa-calzaestampada-2613",
+    "nombre": "Calza Estampada",
+    "precio": 13500,
+    "imagen": "/productos/ropa/calzaestampada.png",
+    "categoria": "Deportiva",
+    "genero": "Mujer",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Indumentaria deportiva de alta performance. Tejido diseñado para acompañar tus movimientos, brindando máximo confort durante tus entrenamientos."
+  },
+  {
+    "id": "ropa-calzapescadora-2613",
+    "nombre": "Calza Pescadora",
+    "precio": 13500,
+    "imagen": "/productos/ropa/calzapescadora.png",
+    "categoria": "Deportiva",
+    "genero": "Mujer",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Indumentaria deportiva de alta performance. Tejido diseñado para acompañar tus movimientos, brindando máximo confort durante tus entrenamientos."
+  },
+  {
+    "id": "ropa-cjarmadoconcaja-2613",
+    "nombre": "Conjunto Armado Con Caja",
+    "precio": 15000,
+    "imagen": "/productos/ropa/cjarmadoconcaja.png",
+    "categoria": "Interior",
+    "genero": "Mujer",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Ropa interior confeccionada con materiales suaves y respirables para garantizar la máxima comodidad durante todo el día. Ajuste perfecto y diseño moderno."
+  },
+  {
+    "id": "ropa-colalesalgodon-2613",
+    "nombre": "Colaless Algodon",
+    "precio": 3500,
+    "imagen": "/productos/ropa/colalesalgodon.png",
+    "categoria": "Interior",
+    "genero": "Mujer",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Ropa interior confeccionada con materiales suaves y respirables para garantizar la máxima comodidad durante todo el día. Ajuste perfecto y diseño moderno."
+  },
+  {
+    "id": "ropa-colalessdama-2613",
+    "nombre": "Colaless Mujer",
+    "precio": 3500,
+    "imagen": "/productos/ropa/colalessdama.png",
+    "categoria": "Interior",
+    "genero": "Mujer",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Ropa interior confeccionada con materiales suaves y respirables para garantizar la máxima comodidad durante todo el día. Ajuste perfecto y diseño moderno."
+  },
+  {
+    "id": "ropa-colalessestampada-2613",
+    "nombre": "Colaless Estampada",
+    "precio": 3500,
+    "imagen": "/productos/ropa/colalessestampada.png",
+    "categoria": "Interior",
+    "genero": "Mujer",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Ropa interior confeccionada con materiales suaves y respirables para garantizar la máxima comodidad durante todo el día. Ajuste perfecto y diseño moderno."
+  },
+  {
+    "id": "ropa-colalesspuntilla-2613",
+    "nombre": "Colaless Puntilla",
+    "precio": 3500,
+    "imagen": "/productos/ropa/colalesspuntilla.png",
+    "categoria": "Interior",
+    "genero": "Mujer",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Ropa interior confeccionada con materiales suaves y respirables para garantizar la máxima comodidad durante todo el día. Ajuste perfecto y diseño moderno."
+  },
+  {
+    "id": "ropa-conjarmadoconcaja-2613",
+    "nombre": "Conjunto Armado Con Caja",
+    "precio": 15000,
+    "imagen": "/productos/ropa/conjarmadoconcaja.png",
+    "categoria": "Interior",
+    "genero": "Mujer",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Ropa interior confeccionada con materiales suaves y respirables para garantizar la máxima comodidad durante todo el día. Ajuste perfecto y diseño moderno."
+  },
+  {
+    "id": "ropa-conjtriang-2613",
+    "nombre": "Conjunto Triang",
+    "precio": 9000,
+    "imagen": "/productos/ropa/conjtriang.png",
+    "categoria": "Interior",
+    "genero": "Mujer",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Ropa interior confeccionada con materiales suaves y respirables para garantizar la máxima comodidad durante todo el día. Ajuste perfecto y diseño moderno."
+  },
+  {
+    "id": "ropa-conjuntitriangulo-2613",
+    "nombre": "Conjunto Triangulo",
+    "precio": 9000,
+    "imagen": "/productos/ropa/conjuntitriangulo.png",
+    "categoria": "Interior",
+    "genero": "Mujer",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Ropa interior confeccionada con materiales suaves y respirables para garantizar la máxima comodidad durante todo el día. Ajuste perfecto y diseño moderno."
+  },
+  {
+    "id": "ropa-conjuntoarmadoconcaja-2613",
+    "nombre": "Conjunto Armado Con Caja",
+    "precio": 15000,
+    "imagen": "/productos/ropa/conjuntoarmadoconcaja.png",
+    "categoria": "Interior",
+    "genero": "Mujer",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Ropa interior confeccionada con materiales suaves y respirables para garantizar la máxima comodidad durante todo el día. Ajuste perfecto y diseño moderno."
+  },
+  {
+    "id": "ropa-conjuntohombre-2613",
+    "nombre": "Conjunto Hombre",
+    "precio": 15000,
+    "imagen": "/productos/ropa/conjuntohombre.png",
+    "categoria": "Deportiva",
+    "genero": "Hombre",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Indumentaria deportiva de alta performance. Tejido diseñado para acompañar tus movimientos, brindando máximo confort durante tus entrenamientos."
+  },
+  {
+    "id": "ropa-conjuntohombrebordo-2613",
+    "nombre": "Conjunto Hombre Bordo",
+    "precio": 15000,
+    "imagen": "/productos/ropa/conjuntohombrebordo.png",
+    "categoria": "Deportiva",
+    "genero": "Hombre",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Indumentaria deportiva de alta performance. Tejido diseñado para acompañar tus movimientos, brindando máximo confort durante tus entrenamientos."
+  },
+  {
+    "id": "ropa-conjuntomicrofibraaro-2613",
+    "nombre": "Conjunto Microfibra Aro",
+    "precio": 0,
+    "imagen": "/productos/ropa/conjuntomicrofibraaro.png",
+    "categoria": "Interior",
+    "genero": "Mujer",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Ropa interior confeccionada con materiales suaves y respirables para garantizar la máxima comodidad durante todo el día. Ajuste perfecto y diseño moderno."
+  },
+  {
+    "id": "ropa-conjuntotrianguliti-2613",
+    "nombre": "Conjunto Triangulito",
+    "precio": 9000,
+    "imagen": "/productos/ropa/conjuntotrianguliti.png",
+    "categoria": "Interior",
+    "genero": "Mujer",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Ropa interior confeccionada con materiales suaves y respirables para garantizar la máxima comodidad durante todo el día. Ajuste perfecto y diseño moderno."
+  },
+  {
+    "id": "ropa-conjuntotriangulito-2614",
+    "nombre": "Conjunto Triangulito",
+    "precio": 9000,
+    "imagen": "/productos/ropa/conjuntotriangulito.png",
+    "categoria": "Interior",
+    "genero": "Mujer",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Ropa interior confeccionada con materiales suaves y respirables para garantizar la máxima comodidad durante todo el día. Ajuste perfecto y diseño moderno."
+  },
+  {
+    "id": "ropa-damamusculosa-2614",
+    "nombre": "Mujer Musculosa",
+    "precio": 9000,
+    "imagen": "/productos/ropa/damamusculosa.png",
+    "categoria": "Deportiva",
+    "genero": "Mujer",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Indumentaria deportiva de alta performance. Tejido diseñado para acompañar tus movimientos, brindando máximo confort durante tus entrenamientos."
+  },
+  {
+    "id": "ropa-jeanconelastico-2614",
+    "nombre": "Jean Con Elastico",
+    "precio": 24000,
+    "imagen": "/productos/ropa/jeanconelastico.png",
+    "categoria": "Deportiva",
+    "genero": "Unisex",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Pantalón de jean con un calce perfecto y resistente, ideal para un look casual y urbano sin perder comodidad."
+  },
+  {
+    "id": "ropa-jeandamaceleste-2614",
+    "nombre": "Jean Mujer Celeste",
+    "precio": 25000,
+    "imagen": "/productos/ropa/jeandamaceleste.png",
+    "categoria": "Deportiva",
+    "genero": "Mujer",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Pantalón de jean con un calce perfecto y resistente, ideal para un look casual y urbano sin perder comodidad."
+  },
+  {
+    "id": "ropa-jeanrotura-2614",
+    "nombre": "Jean Rotura",
+    "precio": 25000,
+    "imagen": "/productos/ropa/jeanrotura.png",
+    "categoria": "Deportiva",
+    "genero": "Unisex",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Pantalón de jean con un calce perfecto y resistente, ideal para un look casual y urbano sin perder comodidad."
+  },
+  {
+    "id": "ropa-mediasantidesli-2614",
+    "nombre": "Medias Antidesli",
+    "precio": 0,
+    "imagen": "/productos/ropa/mediasantidesli.png",
+    "categoria": "Interior",
+    "genero": "Unisex",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Ropa interior confeccionada con materiales suaves y respirables para garantizar la máxima comodidad durante todo el día. Ajuste perfecto y diseño moderno."
+  },
+  {
+    "id": "ropa-mediashombre-2614",
+    "nombre": "Medias Hombre",
+    "precio": 0,
+    "imagen": "/productos/ropa/mediashombre.png",
+    "categoria": "Interior",
+    "genero": "Hombre",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Ropa interior confeccionada con materiales suaves y respirables para garantizar la máxima comodidad durante todo el día. Ajuste perfecto y diseño moderno."
+  },
+  {
+    "id": "ropa-mediastermicas-2614",
+    "nombre": "Medias Termicas",
+    "precio": 0,
+    "imagen": "/productos/ropa/mediastermicas.png",
+    "categoria": "Interior",
+    "genero": "Unisex",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Ropa interior confeccionada con materiales suaves y respirables para garantizar la máxima comodidad durante todo el día. Ajuste perfecto y diseño moderno."
+  },
+  {
+    "id": "ropa-mediasdama-2614",
+    "nombre": "Mediasdama",
+    "precio": 0,
+    "imagen": "/productos/ropa/mediasdama.png",
+    "categoria": "Interior",
+    "genero": "Mujer",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Ropa interior confeccionada con materiales suaves y respirables para garantizar la máxima comodidad durante todo el día. Ajuste perfecto y diseño moderno."
+  },
+  {
+    "id": "ropa-musculosacombinadahombre-2614",
+    "nombre": "Musculosa Combinada Hombre",
+    "precio": 7500,
+    "imagen": "/productos/ropa/musculosacombinadahombre.png",
+    "categoria": "Deportiva",
+    "genero": "Hombre",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Indumentaria deportiva de alta performance. Tejido diseñado para acompañar tus movimientos, brindando máximo confort durante tus entrenamientos."
+  },
+  {
+    "id": "ropa-musculosadama-2614",
+    "nombre": "Musculosa Mujer",
+    "precio": 9000,
+    "imagen": "/productos/ropa/musculosadama.png",
+    "categoria": "Deportiva",
+    "genero": "Mujer",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Indumentaria deportiva de alta performance. Tejido diseñado para acompañar tus movimientos, brindando máximo confort durante tus entrenamientos."
+  },
+  {
+    "id": "ropa-musculosadamaceleste-2614",
+    "nombre": "Musculosa Mujer Celeste",
+    "precio": 8500,
+    "imagen": "/productos/ropa/musculosadamaceleste.png",
+    "categoria": "Deportiva",
+    "genero": "Mujer",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Indumentaria deportiva de alta performance. Tejido diseñado para acompañar tus movimientos, brindando máximo confort durante tus entrenamientos."
+  },
+  {
+    "id": "ropa-musculosahombrecombinada-2614",
+    "nombre": "Musculosa Hombre Combinada",
+    "precio": 7500,
+    "imagen": "/productos/ropa/musculosahombrecombinada.png",
+    "categoria": "Deportiva",
+    "genero": "Hombre",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Indumentaria deportiva de alta performance. Tejido diseñado para acompañar tus movimientos, brindando máximo confort durante tus entrenamientos."
+  },
+  {
+    "id": "ropa-pantalonbuzo-2614",
+    "nombre": "Pantalon Buzo",
+    "precio": 30000,
+    "imagen": "/productos/ropa/pantalonbuzo.png",
+    "categoria": "Deportiva",
+    "genero": "Unisex",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Indumentaria deportiva de alta performance. Tejido diseñado para acompañar tus movimientos, brindando máximo confort durante tus entrenamientos."
+  },
+  {
+    "id": "ropa-pescadoradama-2615",
+    "nombre": "Pescadora Mujer",
+    "precio": 13500,
+    "imagen": "/productos/ropa/pescadoradama.png",
+    "categoria": "Deportiva",
+    "genero": "Mujer",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Indumentaria deportiva de alta performance. Tejido diseñado para acompañar tus movimientos, brindando máximo confort durante tus entrenamientos."
+  },
+  {
+    "id": "ropa-pijamas-2615",
+    "nombre": "Pijamas",
+    "precio": 15000,
+    "imagen": "/productos/ropa/pijamas.png",
+    "categoria": "Interior",
+    "genero": "Unisex",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Ropa interior confeccionada con materiales suaves y respirables para garantizar la máxima comodidad durante todo el día. Ajuste perfecto y diseño moderno."
+  },
+  {
+    "id": "ropa-remeracombinadadeloscojones-2615",
+    "nombre": "Remera Combinada De Los Cojones",
+    "precio": 19000,
+    "imagen": "/productos/ropa/remeracombinadadeloscojones.png",
+    "categoria": "Deportiva",
+    "genero": "Hombre",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Indumentaria deportiva de alta performance. Tejido diseñado para acompañar tus movimientos, brindando máximo confort durante tus entrenamientos."
+  },
+  {
+    "id": "ropa-remeradamadryfit-2615",
+    "nombre": "Remera Mujer Dry Fit",
+    "precio": 10000,
+    "imagen": "/productos/ropa/remeradamadryfit.png",
+    "categoria": "Deportiva",
+    "genero": "Mujer",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Indumentaria deportiva de alta performance. Tejido diseñado para acompañar tus movimientos, brindando máximo confort durante tus entrenamientos."
+  },
+  {
+    "id": "ropa-remeradistritsol-2615",
+    "nombre": "Remera District Sol",
+    "precio": 19000,
+    "imagen": "/productos/ropa/remeradistritsol.png",
+    "categoria": "Deportiva",
+    "genero": "Unisex",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Indumentaria deportiva de alta performance. Tejido diseñado para acompañar tus movimientos, brindando máximo confort durante tus entrenamientos."
+  },
+  {
+    "id": "ropa-remerahombreblanca-2615",
+    "nombre": "Remera Hombre Blanca",
+    "precio": 10000,
+    "imagen": "/productos/ropa/remerahombreblanca.png",
+    "categoria": "Deportiva",
+    "genero": "Hombre",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Indumentaria deportiva de alta performance. Tejido diseñado para acompañar tus movimientos, brindando máximo confort durante tus entrenamientos."
+  },
+  {
+    "id": "ropa-remerahombrebordada-2615",
+    "nombre": "Remera Hombre Bordada",
+    "precio": 15000,
+    "imagen": "/productos/ropa/remerahombrebordada.png",
+    "categoria": "Deportiva",
+    "genero": "Hombre",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Indumentaria deportiva de alta performance. Tejido diseñado para acompañar tus movimientos, brindando máximo confort durante tus entrenamientos."
+  },
+  {
+    "id": "ropa-remerahombredeloscojones-2615",
+    "nombre": "Remera Hombre De Los Cojones",
+    "precio": 19000,
+    "imagen": "/productos/ropa/remerahombredeloscojones.png",
+    "categoria": "Deportiva",
+    "genero": "Hombre",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Indumentaria deportiva de alta performance. Tejido diseñado para acompañar tus movimientos, brindando máximo confort durante tus entrenamientos."
+  },
+  {
+    "id": "ropa-remeramangascortasdama-2615",
+    "nombre": "Remera Mangas Cortas Mujer",
+    "precio": 10000,
+    "imagen": "/productos/ropa/remeramangascortasdama.png",
+    "categoria": "Deportiva",
+    "genero": "Mujer",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Indumentaria deportiva de alta performance. Tejido diseñado para acompañar tus movimientos, brindando máximo confort durante tus entrenamientos."
+  },
+  {
+    "id": "ropa-shortdeporhombre-2615",
+    "nombre": "Short Depor Hombre",
+    "precio": 7500,
+    "imagen": "/productos/ropa/shortdeporhombre.png",
+    "categoria": "Deportiva",
+    "genero": "Hombre",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Indumentaria deportiva de alta performance. Tejido diseñado para acompañar tus movimientos, brindando máximo confort durante tus entrenamientos."
+  },
+  {
+    "id": "ropa-shortdeportivohombre-2615",
+    "nombre": "Short Deportivo Hombre",
+    "precio": 7500,
+    "imagen": "/productos/ropa/shortdeportivohombre.png",
+    "categoria": "Deportiva",
+    "genero": "Hombre",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Indumentaria deportiva de alta performance. Tejido diseñado para acompañar tus movimientos, brindando máximo confort durante tus entrenamientos."
+  },
+  {
+    "id": "ropa-shortdeportivorojo-2615",
+    "nombre": "Short Deportivo Rojo",
+    "precio": 7500,
+    "imagen": "/productos/ropa/shortdeportivorojo.png",
+    "categoria": "Deportiva",
+    "genero": "Unisex",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Indumentaria deportiva de alta performance. Tejido diseñado para acompañar tus movimientos, brindando máximo confort durante tus entrenamientos."
+  },
+  {
+    "id": "ropa-topmoradoconrayas-2615",
+    "nombre": "Top Morado Con Rayas",
+    "precio": 10000,
+    "imagen": "/productos/ropa/topmoradoconrayas.png",
+    "categoria": "Deportiva",
+    "genero": "Unisex",
+    "stock": true,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      "A definir"
+    ],
+    "descripcion": "Indumentaria deportiva de alta performance. Tejido diseñado para acompañar tus movimientos, brindando máximo confort durante tus entrenamientos."
   }
 ]

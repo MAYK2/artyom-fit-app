@@ -2,7 +2,7 @@
   {
     "id": "whey-platinum-star-2lb",
     "marca": "Star Nutrition",
-    "nombre": "Whey Platinum 2lb Doy Pack",
+    "nombre": "Star Nutrition Whey Platinum 2lb Doy Pack",
     "precio": 90000,
     "imagen": "/productos/star-whey-chocolate-2lb.jpg",
     "categoria": "Proteína",
@@ -12,7 +12,7 @@
   {
     "id": "tnt-dynamite-star-240g",
     "marca": "Star Nutrition",
-    "nombre": "TNT Dynamite 240gr",
+    "nombre": "Star Nutrition TNT Dynamite 240gr",
     "precio": 29000,
     "imagen": "/productos/tntdynamitepreentreno.jpg",
     "categoria": "Pre-Workout",
@@ -22,7 +22,7 @@
   {
     "id": "creatina-doypack-star-300g",
     "marca": "Star Nutrition",
-    "nombre": "Creatina Monohidrato 300gr Doy Pack",
+    "nombre": "Star Nutrition Creatina Monohidrato 300gr Doy Pack",
     "precio": 28000,
     "imagen": "/productos/star-creatina-doypack-300g.jpg",
     "categoria": "Creatina",
@@ -32,7 +32,7 @@
   {
     "id": "creatina-ena-300g",
     "marca": "ENA",
-    "nombre": "Creatina Micronizada 300gr",
+    "nombre": "ENA Creatina Micronizada 300gr",
     "precio": 32000,
     "imagen": "/productos/ena-creatina-sin-sabor-300g.jpg",
     "categoria": "Creatina",
@@ -42,7 +42,7 @@
   {
     "id": "caffeine-star-30cap",
     "marca": "Star Nutrition",
-    "nombre": "Caffeine 200 x30 Caps",
+    "nombre": "Star Nutrition Caffeine 200 x30 Caps",
     "precio": 9500,
     "imagen": "/productos/starcaffeine.jpg",
     "categoria": "Pre-Workout",
@@ -52,11 +52,21 @@
   {
     "id": "shaker-espiral-600ml",
     "marca": "Xtrenght Nutrition",
-    "nombre": "Shaker Espiral 600ml",
+    "nombre": "Xtrenght Nutrition Shaker Espiral 600ml",
     "precio": 10000,
     "imagen": "/productos/shakerxtrenght.jpg",
     "categoria": "Accesorios",
     "stock": true,
     "descripcion": "El Shaker Espiral de Xtrenght Nutrition es el compañero ideal para preparar tus batidos de proteína, creatina o pre-workout sin grumos. Su sistema de resorte en espiral mezcla de manera efectiva cualquier polvo, logrando una textura perfectamente homogénea. Capacidad de 600ml con graduaciones marcadas para medir líquidos con precisión. Tapa a rosca hermética, resistente a caídas y fácil de limpiar. Sin BPA."
+  },
+  {
+    "id": "whey-protein-star-2lb",
+    "marca": "Star Nutrition",
+    "nombre": "Star Nutrition Whey Protein 2lb Doy Pack",
+    "precio": 75000,
+    "imagen": "/productos/star-whey-chocolate-2lb.jpg",
+    "categoria": "Proteína",
+    "stock": true,
+    "descripcion": "La Whey Protein clásica de Star Nutrition es ideal para la recuperación muscular. Aporta proteínas de alta calidad con un perfil completo de aminoácidos. Formato Doy Pack de 2 lb."
   }
 ]

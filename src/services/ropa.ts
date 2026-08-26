@@ -6,6 +6,7 @@ export interface ItemRopa {
   precio: number;
   imagen: string | null;
   categoria: string;
+  genero: string;
   stock: boolean;
   talles: string[];
   colores: string[];

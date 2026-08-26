@@ -8,8 +8,10 @@ import { usePathname } from "next/navigation";
 import { useCart } from "@/context/CartContext";
 
 const navLinks = [
-  { label: "Suplementos", href: "/" },
+  { label: "Inicio", href: "/" },
+  { label: "Suplementos", href: "/#catalogo" },
   { label: "Ropa", href: "/ropa" },
+  { label: "Promos", href: "/#promos" },
   { label: "Contacto", href: "https://wa.me/5492645085444?text=Hola%2C+quiero+hacer+una+consulta" },
 ];
 
@@ -25,10 +27,24 @@ export default function Navbar() {
       borderBottom: "1px solid rgba(255,255,255,0.07)",
       backdropFilter: "blur(12px)",
     }}>
+      {/* Announcement Bar */}
+      <div style={{
+        background: "linear-gradient(90deg, #1e3a8a 0%, #0dcaf0 50%, #1e3a8a 100%)",
+        color: "#020617",
+        textAlign: "center",
+        padding: "6px 20px",
+        fontSize: "0.75rem",
+        fontWeight: 800,
+        letterSpacing: "0.1em",
+        textTransform: "uppercase",
+      }}>
+        🚀 ¡ENVÍO GRATIS A RIVADAVIA, SANTA LUCIA Y CAPITAL EN COMPRAS MAYORES A $25.000! 🚀
+      </div>
+
       <nav style={{
         maxWidth: 1280, margin: "0 auto",
         padding: "0 20px",
-        height: 72,
+        height: 80,
         display: "flex", alignItems: "center",
         justifyContent: "space-between",
         gap: 16,
@@ -40,20 +56,25 @@ export default function Navbar() {
             <Image
               src="/logo-artyom.png"
               alt="Artyom"
-              width={52}
-              height={52}
-              style={{ width: 52, height: 52, objectFit: "contain" }}
+              width={64}
+              height={64}
+              style={{ width: 64, height: 64, objectFit: "contain" }}
             />
-            <span style={{
-              fontFamily: "var(--font-orbitron), sans-serif",
-              fontWeight: 800,
-              fontSize: "1.15rem",
-              letterSpacing: "0.15em",
-              color: "#f1f5f9",
-              textTransform: "uppercase"
-            }} className="hidden sm:block">
-              Artyom
-            </span>
+            <div style={{ display: "flex", flexDirection: "column", justifyContent: "center" }} className="hidden sm:flex">
+              <span style={{
+                fontFamily: "var(--font-inter), sans-serif",
+                fontWeight: 600,
+                fontSize: "1.7rem",
+                letterSpacing: "0.1em",
+                background: "linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+                textTransform: "uppercase",
+                lineHeight: 1,
+              }}>
+                ARTYOM
+              </span>
+            </div>
           </Link>
 
           <ul style={{

@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "sync-ropa": "node scripts/sync-ropa.js"
   },
   "dependencies": {
     "lucide-react": "^1.33.0",

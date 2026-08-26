@@ -1,5 +1,6 @@
 import { getRopa, getCategoriasRopa } from "@/services/ropa";
 import RopaCard from "@/components/ui/RopaCard";
+import RopaCatalog from "@/components/ui/RopaCatalog";
 
 export const metadata = {
   title: "Ropa Deportiva | Artyom",
@@ -29,30 +30,8 @@ export default function RopaPage() {
         </p>
       </div>
 
-      {/* Grilla */}
-      <div style={{ maxWidth: 1280, margin: "0 auto", padding: "32px 20px 80px" }}>
-        {items.length === 0 ? (
-          <div style={{ textAlign: "center", padding: "80px 0", color: "#475569" }}>
-            <p style={{ fontSize: "3rem", marginBottom: 16 }}>👕</p>
-            <p style={{ fontWeight: 500 }}>Próximamente — estamos cargando el stock</p>
-          </div>
-        ) : (
-          <>
-            <p style={{ fontSize: "0.8rem", color: "#475569", marginBottom: 24 }}>
-              <span style={{ color: "#0dcaf0", fontWeight: 700 }}>{items.length}</span> artículos disponibles
-            </p>
-            <div style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))",
-              gap: 16,
-            }}>
-              {items.map((item) => (
-                <RopaCard key={item.id} item={item} />
-              ))}
-            </div>
-          </>
-        )}
-      </div>
+      {/* Catálogo con Filtros */}
+      <RopaCatalog items={items} />
     </div>
   );
 }

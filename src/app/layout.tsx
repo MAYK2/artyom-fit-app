@@ -31,7 +31,7 @@ export default function RootLayout({
       <body className="min-h-full bg-neutral-950 text-white antialiased">
         <CartProvider>
           <Navbar />
-          <main className="pt-20">{children}</main>
+          <main className="pt-[110px]">{children}</main>
           <WhatsAppButton />
         </CartProvider>
       </body>
