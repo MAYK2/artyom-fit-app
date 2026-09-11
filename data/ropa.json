@@ -667,7 +667,7 @@
   {
     "id": "ropa-mediasantidesli-2614",
     "nombre": "Medias Antidesli",
-    "precio": 0,
+    "precio": 4500,
     "imagen": "/productos/ropa/mediasantidesli.png",
     "categoria": "Interior",
     "genero": "Unisex",
@@ -686,7 +686,7 @@
   {
     "id": "ropa-mediashombre-2614",
     "nombre": "Medias Hombre",
-    "precio": 0,
+    "precio": 6500,
     "imagen": "/productos/ropa/mediashombre.png",
     "categoria": "Interior",
     "genero": "Hombre",
@@ -705,7 +705,7 @@
   {
     "id": "ropa-mediastermicas-2614",
     "nombre": "Medias Termicas",
-    "precio": 0,
+    "precio": 6500,
     "imagen": "/productos/ropa/mediastermicas.png",
     "categoria": "Interior",
     "genero": "Unisex",
@@ -724,7 +724,7 @@
   {
     "id": "ropa-mediasdama-2614",
     "nombre": "Mediasdama",
-    "precio": 0,
+    "precio": 3850,
     "imagen": "/productos/ropa/mediasdama.png",
     "categoria": "Interior",
     "genero": "Mujer",

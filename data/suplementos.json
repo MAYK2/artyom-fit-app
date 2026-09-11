@@ -23,7 +23,7 @@
     "id": "creatina-doypack-star-300g",
     "marca": "Star Nutrition",
     "nombre": "Star Nutrition Creatina Monohidrato 300gr Doy Pack",
-    "precio": 27900,
+    "precio": 29900,
     "imagen": "/productos/star-creatina-doypack-300g.jpg",
     "categoria": "Creatina",
     "stock": true,
@@ -33,7 +33,7 @@
     "id": "creatina-ena-300g",
     "marca": "ENA",
     "nombre": "ENA Creatina Micronizada 300gr",
-    "precio": 31900,
+    "precio": 30900,
     "imagen": "/productos/ena-creatina-sin-sabor-300g.jpg",
     "categoria": "Creatina",
     "stock": true,
@@ -58,5 +58,145 @@
     "categoria": "Accesorios",
     "stock": true,
     "descripcion": "El Shaker Espiral de Xtrenght Nutrition es el compañero ideal para preparar tus batidos de proteína, creatina o pre-workout sin grumos. Su sistema de resorte en espiral mezcla de manera efectiva cualquier polvo, logrando una textura perfectamente homogénea. Capacidad de 600ml con graduaciones marcadas para medir líquidos con precisión. Tapa a rosca hermética, resistente a caídas y fácil de limpiar. Sin BPA."
+  },
+  {
+    "id": "citrato-magnesio-one-fit-150g",
+    "marca": "ONE FIT",
+    "nombre": "Citrato de Magnesio 150g 60 serv. - ONE FIT",
+    "precio": 8500,
+    "imagen": "/productos/one-fit-citrato-magnesio-150g.jpeg",
+    "categoria": "Vitaminas y Minerales",
+    "stock": true,
+    "descripcion": "Citrato de Magnesio de máxima pureza. Ideal para la recuperación muscular y el bienestar general."
+  },
+  {
+    "id": "creatina-star-fruit-punch-300g",
+    "marca": "Star Nutrition",
+    "nombre": "CREATINA STAR NUTRITION 300g Saborizada Fruit Punch",
+    "precio": 29900,
+    "imagen": "/productos/star-creatina-fruit-punch-300g.jpeg",
+    "categoria": "Creatina",
+    "stock": true,
+    "descripcion": "Creatina Star Nutrition sabor Fruit Punch. 300g en presentación Doypack para máximo rendimiento."
+  },
+  {
+    "id": "creatina-star-neutra-pote-300g",
+    "marca": "Star Nutrition",
+    "nombre": "CREATINA STAR NUTRITION 300g Neutra (Pote)",
+    "precio": 31900,
+    "imagen": "/productos/star-creatina-neutra-pote-300g.jpeg",
+    "categoria": "Creatina",
+    "stock": true,
+    "descripcion": "Creatina monohidratada pura Star Nutrition en pote de 300g. Mejora la fuerza y potencia muscular."
+  },
+  {
+    "id": "omega-3-one-fit-30caps",
+    "marca": "ONE FIT",
+    "nombre": "Omega 3 - 30 caps - ONE FIT NUTRITION",
+    "precio": 24900,
+    "imagen": "/productos/one-fit-omega-3-30caps.jpeg",
+    "categoria": "Salud y Bienestar",
+    "stock": true,
+    "descripcion": "Aceite de pescado de alta calidad con ácidos grasos esenciales EPA y DHA para apoyar la salud cardiovascular y cognitiva."
+  },
+  {
+    "id": "creatina-ena-fruit-punch-300g",
+    "marca": "ENA",
+    "nombre": "Creatina Micronizada Fruit Punch 300g (Doypack) - ENA",
+    "precio": 30900,
+    "imagen": "/productos/ena-creatina-fruit-punch-300g.jpeg",
+    "categoria": "Creatina",
+    "stock": true,
+    "descripcion": "Creatina micronizada ENA sabor Fruit Punch. 300g en presentación Doypack. Mayor absorción y solubilidad."
+  },
+  {
+    "id": "whey-body-advance-frutos-rojos-907g",
+    "marca": "BODY ADVANCE",
+    "nombre": "Whey Protein 907 gr - BODY ADVANCE Frutos Rojos",
+    "precio": 44000,
+    "imagen": "/productos/body-advance-whey-frutos-rojos-907g.jpeg",
+    "categoria": "Proteína",
+    "stock": true,
+    "descripcion": "Proteína de suero de leche Body Advance sabor Frutos Rojos. Presentación Doypack de 907g. Excelente recuperación."
+  },
+  {
+    "id": "vegetal-protein-gold-coco-2lb",
+    "marca": "GOLD NUTRITION",
+    "nombre": "Vegetal Protein Isolate 2 lbs coco - GOLD NUTRITION",
+    "precio": 41000,
+    "imagen": "/productos/gold-nutrition-vegetal-protein-coco-2lb.jpeg",
+    "categoria": "Proteína Vegana",
+    "stock": true,
+    "descripcion": "Proteína aislada de origen 100% vegetal sabor Coco. Ideal para dietas veganas y recuperación post-entrenamiento."
+  },
+  {
+    "id": "creatina-one-fit-200g",
+    "marca": "ONE FIT",
+    "nombre": "Creatina Micronized Neutro 200gr - ONE FIT",
+    "precio": 15000,
+    "imagen": null,
+    "categoria": "Creatina",
+    "stock": true,
+    "descripcion": "Creatina micronizada ONE FIT 200g."
+  },
+  {
+    "id": "creatina-one-fit-500g",
+    "marca": "ONE FIT",
+    "nombre": "Creatina Monohidratada 500g - ONE FIT",
+    "precio": 32500,
+    "imagen": null,
+    "categoria": "Creatina",
+    "stock": true,
+    "descripcion": "Creatina monohidratada ONE FIT 500g."
+  },
+  {
+    "id": "whey-body-advance-chocolate-907g",
+    "marca": "BODY ADVANCE",
+    "nombre": "Whey 907 gr - BODY ADVANCE Chocolate (Bolsa DOYPACK)",
+    "precio": 44000,
+    "imagen": null,
+    "categoria": "Proteína",
+    "stock": true,
+    "descripcion": "Proteína Whey Body Advance 907g sabor Chocolate."
+  },
+  {
+    "id": "classic-whey-one-fit-chocolate",
+    "marca": "ONE FIT",
+    "nombre": "Classic Whey Protein Chocolate - ONE FIT (Bolsa DOYPACK)",
+    "precio": 46200,
+    "imagen": null,
+    "categoria": "Proteína",
+    "stock": true,
+    "descripcion": "Classic Whey Protein ONE FIT sabor Chocolate."
+  },
+  {
+    "id": "classic-whey-one-fit-frutilla",
+    "marca": "ONE FIT",
+    "nombre": "Classic Whey Protein Frutilla - ONE FIT (Bolsa DOYPACK)",
+    "precio": 46200,
+    "imagen": null,
+    "categoria": "Proteína",
+    "stock": true,
+    "descripcion": "Classic Whey Protein ONE FIT sabor Frutilla."
+  },
+  {
+    "id": "creatina-eeuu-ena-300g",
+    "marca": "ENA",
+    "nombre": "Creatina Monohidrato EEUU 300g - ENA",
+    "precio": 34900,
+    "imagen": null,
+    "categoria": "Creatina",
+    "stock": true,
+    "descripcion": "Creatina Monohidrato ENA 300g origen EEUU."
+  },
+  {
+    "id": "optimus-collagen-naranja-240g",
+    "marca": "ONE FIT",
+    "nombre": "OPTIMUS Collagen Sabor Naranja 240gr - ONE FIT",
+    "precio": 17500,
+    "imagen": null,
+    "categoria": "Salud y Bienestar",
+    "stock": true,
+    "descripcion": "Colágeno Optimus sabor Naranja 240g de ONE FIT."
   }
 ]
