@@ -17,7 +17,13 @@
     "imagen": "/productos/tntdynamitepreentreno.jpg",
     "categoria": "Pre-Workout",
     "stock": true,
-    "descripcion": "TNT Dynamite es el pre-entrenamiento explosivo de Star Nutrition, diseñado para atletas que buscan el máximo rendimiento. Su fórmula combina cafeína, vitaminas del complejo B (B6 y B12) y aminoácidos para potenciar la energía, el foco mental y la resistencia durante el entrenamiento. Con 30 porciones por envase de 240g, cada medida aporta una carga energética precisa para atacar tus sesiones con intensidad. Sin TACC. No recomendado para menores de edad ni personas sensibles a la cafeína."
+    "descripcion": "TNT Dynamite es el pre-entrenamiento explosivo de Star Nutrition, diseñado para atletas que buscan el máximo rendimiento. Su fórmula combina cafeína, vitaminas del complejo B (B6 y B12) y aminoácidos para potenciar la energía, el foco mental y la resistencia durante el entrenamiento. Con 30 porciones por envase de 240g, cada medida aporta una carga energética precisa para atacar tus sesiones con intensidad. Sin TACC. No recomendado para menores de edad ni personas sensibles a la cafeína.",
+    "sabores": [
+      {
+        "nombre": "Grape Attack",
+        "imagen": "/productos/tntdynamitepreentreno.jpg"
+      }
+    ]
   },
   {
     "id": "creatina-star-300g",
