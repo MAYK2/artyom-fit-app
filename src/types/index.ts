@@ -6,9 +6,10 @@ export interface Producto {
   precioArtyom: number;
   categoria?: string;
   imagen?: string;
-  sabor?: string;
+  sabor?: string; // Sabor por defecto o único
+  sabores?: { nombre: string; imagen: string | null }[]; // Lista de variantes de sabor
   peso?: string;
-  stock?: number;
+  stock?: boolean | number; // boolean en suplementos.json
   descripcion?: string;
 }
 

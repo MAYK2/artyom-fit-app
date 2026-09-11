@@ -20,24 +20,48 @@
     "descripcion": "TNT Dynamite es el pre-entrenamiento explosivo de Star Nutrition, diseñado para atletas que buscan el máximo rendimiento. Su fórmula combina cafeína, vitaminas del complejo B (B6 y B12) y aminoácidos para potenciar la energía, el foco mental y la resistencia durante el entrenamiento. Con 30 porciones por envase de 240g, cada medida aporta una carga energética precisa para atacar tus sesiones con intensidad. Sin TACC. No recomendado para menores de edad ni personas sensibles a la cafeína."
   },
   {
-    "id": "creatina-doypack-star-300g",
+    "id": "creatina-star-300g",
     "marca": "Star Nutrition",
-    "nombre": "Star Nutrition Creatina Monohidrato 300gr Doy Pack",
+    "nombre": "Creatina Monohidrato 300g - Star Nutrition",
     "precio": 29900,
     "imagen": "/productos/star-creatina-doypack-300g.jpg",
     "categoria": "Creatina",
     "stock": true,
-    "descripcion": "La Creatina Monohidrato de Star Nutrition es 100% pura, ultramicronizada e importada desde EE.UU., garantizando la máxima pureza y absorción. Con 5g de creatina pura por porción (60 servicios), es el suplemento más estudiado de la historia para aumentar la fuerza, potencia y masa muscular. Al ser insípida y soluble, se mezcla fácilmente con agua, jugo o cualquier batido. Libre de gluten y sin TACC. Formato Doy Pack de 300g, cómodo y práctico para el día a día."
+    "descripcion": "Creatina Star Nutrition 300g. Selecciona presentación/sabor.",
+    "sabores": [
+      {
+        "nombre": "Sin Sabor (Doypack)",
+        "imagen": "/productos/star-creatina-doypack-300g.jpg"
+      },
+      {
+        "nombre": "Fruit Punch (Doypack)",
+        "imagen": "/productos/star-creatina-fruit-punch-300g.jpeg"
+      },
+      {
+        "nombre": "Neutra (Pote)",
+        "imagen": "/productos/star-creatina-neutra-pote-300g.jpeg"
+      }
+    ]
   },
   {
-    "id": "creatina-ena-300g",
+    "id": "creatina-ena-300g-micronizada",
     "marca": "ENA",
-    "nombre": "ENA Creatina Micronizada 300gr",
+    "nombre": "Creatina Micronizada 300gr - ENA",
     "precio": 30900,
     "imagen": "/productos/ena-creatina-sin-sabor-300g.jpg",
     "categoria": "Creatina",
     "stock": true,
-    "descripcion": "La Creatina Micronizada de ENA Sport es fabricada en Argentina bajo estrictos estándares de calidad y certificada por la Unión Argentina de Rugby (UAR) como proveedor oficial. Con 5g de creatina monohidrato micronizada por porción (60 ingestas), favorece el aumento de fuerza explosiva y la recuperación entre series. Su proceso de micronización garantiza mayor solubilidad y absorción. Sin sabor, libre de gluten y sin TACC. Presentación en Doy Pack de 300g, ideal para mezclar con agua o tu suplemento favorito."
+    "descripcion": "Creatina Micronizada ENA 300g. Selecciona sabor.",
+    "sabores": [
+      {
+        "nombre": "Sin Sabor",
+        "imagen": "/productos/ena-creatina-sin-sabor-300g.jpg"
+      },
+      {
+        "nombre": "Fruit Punch",
+        "imagen": "/productos/ena-creatina-fruit-punch-300g.jpeg"
+      }
+    ]
   },
   {
     "id": "caffeine-star-30cap",
@@ -63,31 +87,11 @@
     "id": "citrato-magnesio-one-fit-150g",
     "marca": "ONE FIT",
     "nombre": "Citrato de Magnesio 150g 60 serv. - ONE FIT",
-    "precio": 8500,
+    "precio": 7900,
     "imagen": "/productos/one-fit-citrato-magnesio-150g.jpeg",
     "categoria": "Vitaminas y Minerales",
     "stock": true,
     "descripcion": "Citrato de Magnesio de máxima pureza. Ideal para la recuperación muscular y el bienestar general."
-  },
-  {
-    "id": "creatina-star-fruit-punch-300g",
-    "marca": "Star Nutrition",
-    "nombre": "CREATINA STAR NUTRITION 300g Saborizada Fruit Punch",
-    "precio": 29900,
-    "imagen": "/productos/star-creatina-fruit-punch-300g.jpeg",
-    "categoria": "Creatina",
-    "stock": true,
-    "descripcion": "Creatina Star Nutrition sabor Fruit Punch. 300g en presentación Doypack para máximo rendimiento."
-  },
-  {
-    "id": "creatina-star-neutra-pote-300g",
-    "marca": "Star Nutrition",
-    "nombre": "CREATINA STAR NUTRITION 300g Neutra (Pote)",
-    "precio": 31900,
-    "imagen": "/productos/star-creatina-neutra-pote-300g.jpeg",
-    "categoria": "Creatina",
-    "stock": true,
-    "descripcion": "Creatina monohidratada pura Star Nutrition en pote de 300g. Mejora la fuerza y potencia muscular."
   },
   {
     "id": "omega-3-one-fit-30caps",
@@ -100,20 +104,10 @@
     "descripcion": "Aceite de pescado de alta calidad con ácidos grasos esenciales EPA y DHA para apoyar la salud cardiovascular y cognitiva."
   },
   {
-    "id": "creatina-ena-fruit-punch-300g",
-    "marca": "ENA",
-    "nombre": "Creatina Micronizada Fruit Punch 300g (Doypack) - ENA",
-    "precio": 30900,
-    "imagen": "/productos/ena-creatina-fruit-punch-300g.jpeg",
-    "categoria": "Creatina",
-    "stock": true,
-    "descripcion": "Creatina micronizada ENA sabor Fruit Punch. 300g en presentación Doypack. Mayor absorción y solubilidad."
-  },
-  {
     "id": "whey-body-advance-frutos-rojos-907g",
     "marca": "BODY ADVANCE",
     "nombre": "Whey Protein 907 gr - BODY ADVANCE Frutos Rojos",
-    "precio": 44000,
+    "precio": 42900,
     "imagen": "/productos/body-advance-whey-frutos-rojos-907g.jpeg",
     "categoria": "Proteína",
     "stock": true,
@@ -123,7 +117,7 @@
     "id": "vegetal-protein-gold-coco-2lb",
     "marca": "GOLD NUTRITION",
     "nombre": "Vegetal Protein Isolate 2 lbs coco - GOLD NUTRITION",
-    "precio": 41000,
+    "precio": 40900,
     "imagen": "/productos/gold-nutrition-vegetal-protein-coco-2lb.jpeg",
     "categoria": "Proteína Vegana",
     "stock": true,
@@ -133,7 +127,7 @@
     "id": "creatina-one-fit-200g",
     "marca": "ONE FIT",
     "nombre": "Creatina Micronized Neutro 200gr - ONE FIT",
-    "precio": 15000,
+    "precio": 14900,
     "imagen": null,
     "categoria": "Creatina",
     "stock": true,
@@ -143,7 +137,7 @@
     "id": "creatina-one-fit-500g",
     "marca": "ONE FIT",
     "nombre": "Creatina Monohidratada 500g - ONE FIT",
-    "precio": 32500,
+    "precio": 31900,
     "imagen": null,
     "categoria": "Creatina",
     "stock": true,
@@ -153,31 +147,31 @@
     "id": "whey-body-advance-chocolate-907g",
     "marca": "BODY ADVANCE",
     "nombre": "Whey 907 gr - BODY ADVANCE Chocolate (Bolsa DOYPACK)",
-    "precio": 44000,
+    "precio": 42900,
     "imagen": null,
     "categoria": "Proteína",
     "stock": true,
     "descripcion": "Proteína Whey Body Advance 907g sabor Chocolate."
   },
   {
-    "id": "classic-whey-one-fit-chocolate",
+    "id": "classic-whey-one-fit-doypack",
     "marca": "ONE FIT",
-    "nombre": "Classic Whey Protein Chocolate - ONE FIT (Bolsa DOYPACK)",
-    "precio": 46200,
-    "imagen": null,
+    "nombre": "Classic Whey Protein - ONE FIT (Bolsa DOYPACK)",
+    "precio": 45900,
+    "imagen": "/productos/one-fit-classic-whey-chocolate.jpeg",
     "categoria": "Proteína",
     "stock": true,
-    "descripcion": "Classic Whey Protein ONE FIT sabor Chocolate."
-  },
-  {
-    "id": "classic-whey-one-fit-frutilla",
-    "marca": "ONE FIT",
-    "nombre": "Classic Whey Protein Frutilla - ONE FIT (Bolsa DOYPACK)",
-    "precio": 46200,
-    "imagen": null,
-    "categoria": "Proteína",
-    "stock": true,
-    "descripcion": "Classic Whey Protein ONE FIT sabor Frutilla."
+    "descripcion": "Classic Whey Protein ONE FIT. Selecciona tu sabor.",
+    "sabores": [
+      {
+        "nombre": "Chocolate",
+        "imagen": "/productos/one-fit-classic-whey-chocolate.jpeg"
+      },
+      {
+        "nombre": "Frutilla",
+        "imagen": "/productos/one-fit-classic-whey-frutilla.jpeg"
+      }
+    ]
   },
   {
     "id": "creatina-eeuu-ena-300g",
@@ -193,7 +187,7 @@
     "id": "optimus-collagen-naranja-240g",
     "marca": "ONE FIT",
     "nombre": "OPTIMUS Collagen Sabor Naranja 240gr - ONE FIT",
-    "precio": 17500,
+    "precio": 16900,
     "imagen": null,
     "categoria": "Salud y Bienestar",
     "stock": true,
