@@ -5,10 +5,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { MessageCircle, Tag, Package } from "lucide-react";
 import { Producto } from "@/types";
+import { getWALink } from "./WhatsAppButton"; // Assuming WhatsAppButton is in the same folder
 
 interface Props {
   producto: Producto;
-  getWALink: (msg: string) => string;
 }
 
 function formatPrecio(n: number) {
@@ -19,7 +19,7 @@ function formatPrecio(n: number) {
   }).format(n);
 }
 
-export default function ProductDetailClient({ producto, getWALink }: Props) {
+export default function ProductDetailClient({ producto }: Props) {
   const hasSabores = producto.sabores && producto.sabores.length > 0;
   const [saborSeleccionado, setSaborSeleccionado] = useState(
     hasSabores ? producto.sabores![0] : null

@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getProductoPorId, getProductos } from "@/services/productos";
-import { getWALink } from "@/components/ui/WhatsAppButton";
 import { MessageCircle, ArrowLeft, Tag, Package } from "lucide-react";
 
 import ProductDetailClient from "@/components/ui/ProductDetailClient";
@@ -48,7 +47,7 @@ export default async function ProductoPage({ params }: { params: Promise<{ id: s
         <style>{`.back-link:hover { color: #eab308; }`}</style>
       </div>
 
-      <ProductDetailClient producto={producto} getWALink={getWALink} />
+      <ProductDetailClient producto={producto} />
     </div>
   );
 }
