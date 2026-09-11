@@ -128,7 +128,7 @@
     "marca": "ONE FIT",
     "nombre": "Creatina Micronized Neutro 200gr - ONE FIT",
     "precio": 14900,
-    "imagen": null,
+    "imagen": "/productos/one-fit-creatina-neutra-200g.jpeg",
     "categoria": "Creatina",
     "stock": true,
     "descripcion": "Creatina micronizada ONE FIT 200g."
@@ -138,7 +138,7 @@
     "marca": "ONE FIT",
     "nombre": "Creatina Monohidratada 500g - ONE FIT",
     "precio": 31900,
-    "imagen": null,
+    "imagen": "/productos/one-fit-creatina-500g.jpeg",
     "categoria": "Creatina",
     "stock": true,
     "descripcion": "Creatina monohidratada ONE FIT 500g."
@@ -178,7 +178,7 @@
     "marca": "ONE FIT",
     "nombre": "OPTIMUS Collagen Sabor Naranja 240gr - ONE FIT",
     "precio": 16900,
-    "imagen": null,
+    "imagen": "/productos/one-fit-collageno-naranja-240g.jpeg",
     "categoria": "Salud y Bienestar",
     "stock": true,
     "descripcion": "Colágeno Optimus sabor Naranja 240g de ONE FIT."
