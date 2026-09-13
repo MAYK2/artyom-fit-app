@@ -66,6 +66,10 @@
       {
         "nombre": "Fruit Punch",
         "imagen": "/productos/ena-creatina-fruit-punch-300g.jpeg"
+      },
+      {
+        "nombre": "Naranja",
+        "imagen": "/productos/creatinanaranja.jpg"
       }
     ]
   },
@@ -110,14 +114,24 @@
     "descripcion": "Aceite de pescado de alta calidad con ácidos grasos esenciales EPA y DHA para apoyar la salud cardiovascular y cognitiva."
   },
   {
-    "id": "whey-body-advance-frutos-rojos-907g",
+    "id": "whey-body-advance-907g",
     "marca": "BODY ADVANCE",
-    "nombre": "Whey Protein 907 gr - BODY ADVANCE Frutos Rojos",
+    "nombre": "Whey Protein 907 gr - BODY ADVANCE",
     "precio": 42900,
     "imagen": "/productos/body-advance-whey-frutos-rojos-907g.jpeg",
     "categoria": "Proteína",
     "stock": true,
-    "descripcion": "Proteína de suero de leche Body Advance sabor Frutos Rojos. Presentación Doypack de 907g. Excelente recuperación."
+    "descripcion": "Proteína de suero de leche Body Advance. Presentación Doypack de 907g. Excelente recuperación.",
+    "sabores": [
+      {
+        "nombre": "Frutos Rojos",
+        "imagen": "/productos/body-advance-whey-frutos-rojos-907g.jpeg"
+      },
+      {
+        "nombre": "Chocolate",
+        "imagen": "/productos/body-advance-whey-chocolate-907g.jpeg"
+      }
+    ]
   },
   {
     "id": "vegetal-protein-gold-coco-2lb",
