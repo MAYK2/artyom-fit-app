@@ -33,7 +33,7 @@
     "imagen": "/productos/star-creatina-doypack-300g.jpg",
     "categoria": "Creatina",
     "stock": true,
-    "descripcion": "Creatina Star Nutrition 300g. Selecciona presentación/sabor.",
+    "descripcion": "Creatina Star Nutrition 300g. Selecciona presentación/sabor.\n\nInformación Nutricional (Porción 5g):\n- Creatina Monohidrato: 5g\n- Valor energético: 0 Kcal\nRinde 60 porciones por envase.",
     "sabores": [
       {
         "nombre": "Sin Sabor (Doypack)",
@@ -97,7 +97,7 @@
     "imagen": "/productos/one-fit-citrato-magnesio-150g.jpeg",
     "categoria": "Vitaminas y Minerales",
     "stock": true,
-    "descripcion": "Citrato de Magnesio de máxima pureza. Ideal para la recuperación muscular y el bienestar general."
+    "descripcion": "El Magnesio es uno de los minerales más abundante en el organismo, un adulto almacena aproximadamente 25g de magnesio y entre el 50% y el 60% se encuentra presente en huesos y otros tejidos blandos. Este mineral es un cofactor importante para regular más de 300 enzimas que están involucradas en la síntesis de proteínas, funciones musculares y nerviosas y regulación de la presión sanguínea. Contribuye en el desarrollo de huesos y juega un rol importante en la activación del transporte de iones calcio y potasio, lo cual es fundamental para generar los impulsos nerviosos y la contracción muscular. El consumo de adecuadas cantidades de magnesio ayuda a aumentar la densidad de los huesos, previniendo fracturas y osteoporosis. La deficiencia de magnesio se ha visto relacionada con migrañas. Diversos estudios señalaron que la suplementación de este mineral disminuye la frecuencia y la intensidad de los dolores de cabeza.\n\nInformación Nutricional (Porción 2,5g - 1/2 cucharada de té):\n- Magnesio: 300mg"
   },
   {
     "id": "omega-3-one-fit-30caps",
@@ -127,7 +127,7 @@
     "imagen": "/productos/gold-nutrition-vegetal-protein-coco-2lb.jpeg",
     "categoria": "Proteína Vegana",
     "stock": true,
-    "descripcion": "Proteína aislada de origen 100% vegetal sabor Coco. Ideal para dietas veganas y recuperación post-entrenamiento."
+    "descripcion": "Proteína aislada de origen 100% vegetal sabor Coco. Ideal para dietas veganas y recuperación post-entrenamiento.\n\nInformación Nutricional (Porción 35g - 1 scoop):\n- Valor energético: 137 Kcal\n- Proteínas: 30g\n- Grasas totales: 3g\n- Sodio: 280mg\n- Vitamina B12: 2.4 µg"
   },
   {
     "id": "creatina-one-fit-200g",
@@ -137,7 +137,7 @@
     "imagen": "/productos/one-fit-creatina-neutra-200g.jpeg",
     "categoria": "Creatina",
     "stock": true,
-    "descripcion": "Creatina micronizada ONE FIT 200g."
+    "descripcion": "Creatina micronizada ONE FIT 200g.\n\nBeneficios principales:\n• Aumenta la fuerza y la potencia muscular.\n• Mejora el rendimiento en entrenamientos de alta intensidad.\n• Favorece la recuperación y retrasa la fatiga.\n• Contribuye al aumento de volumen y congestión muscular.\n• Ayuda a mantener hidratadas las células musculares.\n\nCaracterísticas destacadas:\n• 100% pura y micronizada: mejor disolución y absorción.\n• Con vitamina C para efecto antioxidante y mejor recuperación.\n• Industria Argentina, materias primas importadas.\n• Apta para todas las disciplinas: gimnasio, crossfit, running, deportes de equipo y más.\n\nModo de uso:\nMezclar 1 medida (5 g) en agua, jugo o tu bebida preferida. Consumir preferentemente antes y/o después de entrenar, o lejos de las comidas para una mejor absorción.\n\nRecomendaciones:\n• Mantener un consumo diario constante para mejores resultados.\n• Consultar con un profesional de la salud ante cualquier duda.\n• Conservar en lugar fresco y seco.\n\nInformación Nutricional (Porción 5g - 1 cucharada):\n- Monohidrato de creatina: 5g\n- Vitamina C: 14mg\n- Valor energético: 0 Kcal"
   },
   {
     "id": "creatina-one-fit-500g",
@@ -147,7 +147,7 @@
     "imagen": "/productos/one-fit-creatina-500g.jpeg",
     "categoria": "Creatina",
     "stock": true,
-    "descripcion": "Creatina monohidratada ONE FIT 500g."
+    "descripcion": "Creatina monohidratada ONE FIT 500g.\n\nBeneficios principales:\n• Aumenta la fuerza y la potencia muscular.\n• Mejora el rendimiento en entrenamientos de alta intensidad.\n• Favorece la recuperación y retrasa la fatiga.\n• Contribuye al aumento de volumen y congestión muscular.\n• Ayuda a mantener hidratadas las células musculares.\n\nCaracterísticas destacadas:\n• 100% pura y micronizada: mejor disolución y absorción.\n• Con vitamina C para efecto antioxidante y mejor recuperación.\n• Industria Argentina, materias primas importadas.\n• Apta para todas las disciplinas: gimnasio, crossfit, running, deportes de equipo y más.\n\nModo de uso:\nMezclar 1 medida (5 g) en agua, jugo o tu bebida preferida. Consumir preferentemente antes y/o después de entrenar, o lejos de las comidas para una mejor absorción.\n\nRecomendaciones:\n• Mantener un consumo diario constante para mejores resultados.\n• Consultar con un profesional de la salud ante cualquier duda.\n• Conservar en lugar fresco y seco.\n\nInformación Nutricional (Porción 5g - 1 cucharada):\n- Monohidrato de creatina: 5g\n- Vitamina C: 14mg\n- Valor energético: 0 Kcal"
   },
   {
     "id": "classic-whey-one-fit-doypack",
@@ -157,7 +157,7 @@
     "imagen": "/productos/one-fit-classic-whey-chocolate.jpeg",
     "categoria": "Proteína",
     "stock": true,
-    "descripcion": "Classic Whey Protein ONE FIT. Selecciona tu sabor.",
+    "descripcion": "Classic Whey Protein ONE FIT. Selecciona tu sabor.\n\nInformación Nutricional (Porción 40g - 1 scoop):\n- Valor energético: 148 Kcal\n- Proteínas: 24g\n- Carbohidratos: 4.5g\n- Grasas totales: 3.8g\n- Grasas saturadas: 1.5g\n- Fibra alimentaria: 2.5g\n- Sodio: 85mg",
     "sabores": [
       {
         "nombre": "Chocolate",
@@ -187,6 +187,6 @@
     "imagen": "/productos/one-fit-collageno-naranja-240g.jpeg",
     "categoria": "Salud y Bienestar",
     "stock": true,
-    "descripcion": "Colágeno Optimus sabor Naranja 240g de ONE FIT."
+    "descripcion": "Colágeno Optimus sabor Naranja 240g de ONE FIT. Está compuesto por colágeno hidrolizado y vitamina C. Es una proteína que está muy presente en nuestro organismo, ya que compone la piel, las uñas, el pelo, los huesos y el cartílago. Que el colágeno esté previamente hidrolizado permite una mayor absorción y digestibilidad del mismo. Su consumo puede evitar el dolor en las articulaciones, prevenir lesiones y mantener fuertes los huesos.\nLa vitamina C es un nutriente natural e hidrosoluble que actúa como protector de las células del envejecimiento causado por los radicales libres. El cuerpo no puede producir la vitamina C ni la almacena, por lo que es importante incluir alimentos que contengan esta vitamina en la dieta diaria. La vitamina C también es fundamental para producir colágeno.\n\nInformación Nutricional (Porción 11g - 2 cucharadas):\n- Valor energético: 40 Kcal\n- Proteínas: 10g\n- Colágeno: 10g\n- Vitamina C: 500mg\n- Sodio: 10mg"
   }
 ]
