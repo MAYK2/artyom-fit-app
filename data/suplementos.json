@@ -42,10 +42,6 @@
       {
         "nombre": "Fruit Punch (Doypack)",
         "imagen": "/productos/star-creatina-fruit-punch-300g.jpeg"
-      },
-      {
-        "nombre": "Neutra (Pote)",
-        "imagen": "/productos/star-creatina-neutra-pote-300g.jpeg"
       }
     ]
   },
@@ -202,5 +198,15 @@
     "categoria": "Salud y Bienestar",
     "stock": true,
     "descripcion": "Colágeno Optimus sabor Naranja 240g de ONE FIT. Está compuesto por colágeno hidrolizado y vitamina C. Es una proteína que está muy presente en nuestro organismo, ya que compone la piel, las uñas, el pelo, los huesos y el cartílago. Que el colágeno esté previamente hidrolizado permite una mayor absorción y digestibilidad del mismo. Su consumo puede evitar el dolor en las articulaciones, prevenir lesiones y mantener fuertes los huesos.\nLa vitamina C es un nutriente natural e hidrosoluble que actúa como protector de las células del envejecimiento causado por los radicales libres. El cuerpo no puede producir la vitamina C ni la almacena, por lo que es importante incluir alimentos que contengan esta vitamina en la dieta diaria. La vitamina C también es fundamental para producir colágeno.\n\nInformación Nutricional (Porción 11g - 2 cucharadas):\n- Valor energético: 40 Kcal\n- Proteínas: 10g\n- Colágeno: 10g\n- Vitamina C: 500mg\n- Sodio: 10mg"
+  },
+  {
+    "id": "creatina-star-pote-300g",
+    "marca": "Star Nutrition",
+    "nombre": "Creatina Monohidrato 300g Pote - Star Nutrition",
+    "precio": 28900,
+    "imagen": "/productos/star-creatina-neutra-pote-300g.jpeg",
+    "categoria": "Creatina",
+    "stock": true,
+    "descripcion": "Creatina Star Nutrition 300g en Pote. Sabor Neutro.\n\nInformación Nutricional (Porción 5g):\n- Creatina Monohidrato: 5g\n- Valor energético: 0 Kcal\nRinde 60 porciones por envase."
   }
 ]
