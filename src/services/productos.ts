@@ -13,6 +13,7 @@ export function getProductos(): Producto[] {
       imagen: p.imagen ?? null,
       categoria: p.categoria,
       descripcion: p.descripcion,
+      sabores: p.sabores,
     }));
 }
 
