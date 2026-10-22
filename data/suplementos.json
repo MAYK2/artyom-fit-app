@@ -213,10 +213,30 @@
     "id": "creatina-gold-nutrition-300g",
     "marca": "GOLD NUTRITION",
     "nombre": "Creatina Monohidrato 300g - GOLD NUTRITION",
-    "precio": 29900,
+    "precio": 27900,
     "imagen": "/productos/gold-nutrition-creatina-300g.jpeg",
     "categoria": "Creatina",
     "stock": true,
     "descripcion": "Creatina monohidrato 100% pura y micronizada, de grado farmacéutico. Contenido neto: 300 gramos (60 porciones de 5g cada una). Sabor neutro / sin sabor (fácil de disolver en agua, jugos o batidos sin alterar el gusto). Libre de rellenos o agregados artificiales.\n\nBeneficios principales:\n- Fuerza y potencia: Aumenta las reservas de fosfocreatina para mejorar el rendimiento en esfuerzos anaeróbicos y de alta intensidad (levantamiento de pesas, crossfit, fútbol, running).\n- Masa muscular: Favorece la hidratación celular y el volumen de las fibras musculares.\n- Recuperación: Ayuda a retrasar la fatiga muscular y acelera la recuperación entre series.\n\nModo de uso y dosificación:\n- Tamaño de la porción: 5 gramos (una cucharadita de té).\n- Preparación: Disolver 1 porción en 200 ml de agua, jugo o la bebida de preferencia.\n- Fase de carga (opcional, semana 1): Consumir 5 gramos dos veces al día entre las comidas.\n- Fase de mantenimiento (semana 2 en adelante): Consumir 5 gramos una vez al día, preferentemente lejos de las comidas o unos 90 minutos antes de entrenar.\n\nInformación Nutricional (Porción 5g):\n- Creatina Monohidrato Micronizada: 5g\n- Valor energético: 0 Kcal\nRinde 60 porciones por envase."
+  },
+  {
+    "id": "star-nutrition-collagen-210g",
+    "marca": "Star Nutrition",
+    "nombre": "Star Nutrition Collagen 210g Sabor Limón",
+    "precio": 18900,
+    "imagen": "/productos/star-nutrition-collagen-210g.png",
+    "categoria": "Salud y Bienestar",
+    "stock": true,
+    "descripcion": "Colágeno Hidrolizado Star Nutrition Collagen 210g sabor Limón. Fórmula avanzada compuesta por 10g de colágeno hidrolizado puro por porción, complementada con Ácido Hialurónico, Coenzima Q10, Resveratrol y Vitamina C.\n\nBeneficios principales:\n- Salud articular y ósea: Protege articulaciones, cartílagos, tendones y ligamentos.\n- Piel, pelo y uñas: Favorece la hidratación, firmeza y elasticidad celular gracias al ácido hialurónico.\n- Poder antioxidante: La coenzima Q10 y el resveratrol neutralizan radicales libres y retrasan el envejecimiento celular.\n- Sabor refrescante: Delicioso sabor limón, de fácil disolución. Libre de gluten (Sin TACC).\n\nInformación Nutricional (Porción 10.5g - 1 medida dosificadora):\n- Colágeno Hidrolizado: 10g\n- Ácido Hialurónico: 50mg\n- Coenzima Q10: 10mg\n- Resveratrol: 10mg\n- Vitamina C: 45mg\n- Valor energético: 38 Kcal\nContenido neto: 210 gramos (20 servicios)."
+  },
+  {
+    "id": "xbody-citrato-magnesio-120caps",
+    "marca": "XBODY Evolution",
+    "nombre": "Citrato de Magnesio 120 Cápsulas - XBODY Evolution",
+    "precio": 14900,
+    "imagen": "/productos/xbody-citrato-magnesio-120caps.png",
+    "categoria": "Salud y Bienestar",
+    "stock": true,
+    "descripcion": "Citrato de Magnesio Cellular Energy de XBODY Evolution. Suplemento dietario en cápsulas formulado a base de citrato de magnesio de alta biodisponibilidad y máxima absorción celular.\n\nBeneficios principales:\n- Calidad del descanso: Favorece la relajación neuromuscular y ayuda a regular el sueño profundo y reparador.\n- Salud ósea y muscular: Contribuye a evitar contracturas, calambres y apoya la densidad ósea.\n- Metabolismo energético: Participa en la producción de energía celular y ayuda a reducir la fatiga física y mental.\n- Fortalecimiento inmunológico: Refuerza las defensas naturales y la función del sistema nervioso.\n\nInformación Nutricional (Porción 4 cápsulas):\n- Magnesio elemental: 239mg (de citrato de magnesio)\n- Valor energético: 0 Kcal\nContenido neto: 120 cápsulas (30 servicios)."
   }
 ]

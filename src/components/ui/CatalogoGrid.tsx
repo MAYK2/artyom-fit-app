@@ -15,7 +15,7 @@ export default function CatalogoGrid({ productos, categorias }: CatalogoGridProp
   const [marca, setMarca] = useState("Todas");
   const [busqueda, setBusqueda] = useState("");
   const [orden, setOrden] = useState("");
-  const marcas = ["Todas", "ENA", "Star Nutrition", "GOLD NUTRITION"];
+  const marcas = ["Todas", "ENA", "Star Nutrition", "GOLD NUTRITION", "XBODY Evolution"];
 
   const filtrados = useMemo(() => {
     let lista = productos;
