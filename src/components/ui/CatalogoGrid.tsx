@@ -95,25 +95,28 @@ export default function CatalogoGrid({ productos, categorias }: CatalogoGridProp
   return (
     <div>
       {/* ── BARRA DE FILTROS ── */}
-      <div style={{
-        position: "sticky", top: 80, zIndex: 30,
-        background: "rgba(2, 6, 23, 0.95)",
-        backdropFilter: "blur(12px)",
-        borderBottom: "1px solid rgba(255,255,255,0.06)",
-        padding: "14px 0",
-      }}>
-        <div style={{ maxWidth: 1280, margin: "0 auto", padding: "0 20px", display: "flex", flexDirection: "column", gap: 12 }}>
+      <div
+        className="catalogo-filter-bar"
+        style={{
+          background: "rgba(2, 6, 23, 0.95)",
+          backdropFilter: "blur(12px)",
+          borderBottom: "1px solid rgba(255,255,255,0.06)",
+          padding: "12px 0",
+          zIndex: 30,
+        }}
+      >
+        <div style={{ maxWidth: 1280, margin: "0 auto", padding: "0 16px", display: "flex", flexDirection: "column", gap: 10 }}>
 
-          {/* Fila 1: search + orden */}
-          <div style={{ display: "flex", alignItems: "center", gap: 12, flexWrap: "wrap" }}>
+          {/* Fila 1: Búsqueda + Selects de Marca y Orden */}
+          <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
             <form
               onSubmit={(e) => {
                 e.preventDefault();
                 inputRef.current?.blur();
               }}
-              style={{ flex: "1 1 240px", maxWidth: 360, margin: 0 }}
+              style={{ flex: "1 1 200px", minWidth: 180, margin: 0 }}
             >
-              <div className="search-input" style={{ width: "100%", maxWidth: "100%" }}>
+              <div className="search-input" style={{ width: "100%", maxWidth: "100%", padding: "7px 12px" }}>
                 <label htmlFor="catalogo-busqueda" className="sr-only">Buscar producto</label>
                 <button
                   type="submit"
@@ -131,16 +134,17 @@ export default function CatalogoGrid({ productos, categorias }: CatalogoGridProp
                   }}
                   title="Buscar"
                 >
-                  <Search size={16} />
+                  <Search size={15} />
                 </button>
                 <input
                   ref={inputRef}
                   id="catalogo-busqueda"
                   type="text"
                   aria-label="Buscar producto"
-                  placeholder="Buscar producto, marca, ingrediente..."
+                  placeholder="Buscar producto, marca..."
                   value={busqueda}
                   onChange={(e) => setBusqueda(e.target.value)}
+                  style={{ fontSize: "0.82rem" }}
                 />
                 {busqueda && (
                   <button
@@ -163,12 +167,40 @@ export default function CatalogoGrid({ productos, categorias }: CatalogoGridProp
                     }}
                     title="Limpiar búsqueda"
                   >
-                    <X size={15} />
+                    <X size={14} />
                   </button>
                 )}
               </div>
             </form>
 
+            {/* Select Marca */}
+            <select
+              id="catalogo-marca"
+              aria-label="Filtrar por marca"
+              value={marca}
+              onChange={(e) => setMarca(e.target.value)}
+              style={{
+                background: "#1e293b",
+                border: marca !== "Todas" ? "1px solid #eab308" : "1px solid rgba(255,255,255,0.08)",
+                color: marca !== "Todas" ? "#eab308" : "#94a3b8",
+                borderRadius: 8,
+                padding: "8px 10px",
+                fontSize: "0.78rem",
+                outline: "none",
+                cursor: "pointer",
+                fontWeight: marca !== "Todas" ? 700 : 500,
+                flex: "1 1 auto",
+                minWidth: 120,
+              }}
+            >
+              {marcas.map((m) => (
+                <option key={m} value={m}>
+                  {m === "Todas" ? "Todas las marcas" : `Marca: ${m}`}
+                </option>
+              ))}
+            </select>
+
+            {/* Select Orden */}
             <select
               id="catalogo-orden"
               aria-label="Ordenar productos por precio"
@@ -176,13 +208,16 @@ export default function CatalogoGrid({ productos, categorias }: CatalogoGridProp
               onChange={(e) => setOrden(e.target.value)}
               style={{
                 background: "#1e293b",
-                border: "1px solid rgba(255,255,255,0.08)",
-                color: "#94a3b8",
+                border: orden ? "1px solid #eab308" : "1px solid rgba(255,255,255,0.08)",
+                color: orden ? "#eab308" : "#94a3b8",
                 borderRadius: 8,
-                padding: "8px 12px",
-                fontSize: "0.8rem",
+                padding: "8px 10px",
+                fontSize: "0.78rem",
                 outline: "none",
                 cursor: "pointer",
+                fontWeight: orden ? 700 : 500,
+                flex: "1 1 auto",
+                minWidth: 130,
               }}
             >
               <option value="">Ordenar por precio</option>
@@ -190,61 +225,92 @@ export default function CatalogoGrid({ productos, categorias }: CatalogoGridProp
               <option value="desc">Mayor precio primero</option>
             </select>
 
+            {/* Botón reset filtros si hay algo activo */}
             {(busqueda || categoria !== "Todos" || marca !== "Todas" || orden) && (
               <button
                 onClick={limpiarFiltros}
                 style={{
                   display: "inline-flex",
                   alignItems: "center",
-                  gap: 6,
+                  gap: 4,
                   background: "rgba(234, 179, 8, 0.1)",
                   border: "1px solid rgba(234, 179, 8, 0.3)",
                   color: "#eab308",
-                  padding: "6px 12px",
+                  padding: "7px 10px",
                   borderRadius: 8,
                   fontSize: "0.75rem",
                   fontWeight: 600,
                   cursor: "pointer",
                   transition: "all 0.15s",
+                  whiteSpace: "nowrap",
                 }}
+                title="Limpiar todos los filtros"
               >
-                <RotateCcw size={12} /> Limpiar filtros
+                <RotateCcw size={12} /> Limpiar
               </button>
             )}
           </div>
 
-          {/* Fila 2: categorías */}
-          <div style={{ display: "flex", gap: 8, flexWrap: "wrap", alignItems: "center" }}>
-            <span style={{ fontSize: "0.7rem", color: "#475569", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.06em", marginRight: 4 }}>Categoría</span>
-            {categorias.map((cat) => (
-              <button
-                key={cat}
-                id={`filtro-categoria-${cat.toLowerCase().replace(/\s+/g, "-")}`}
-                aria-pressed={categoria === cat}
-                className={`filter-pill ${categoria === cat ? "active" : ""}`}
-                onClick={() => setCategoria(cat)}
-              >
-                {cat}
-              </button>
-            ))}
-          </div>
-
-          {/* Fila 3: marcas */}
-          <div style={{ display: "flex", gap: 8, flexWrap: "wrap", alignItems: "center" }}>
-            <span style={{ fontSize: "0.7rem", color: "#475569", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.06em", marginRight: 4 }}>Marca</span>
-            {marcas.map((m) => (
-              <button
-                key={m}
-                id={`filtro-marca-${m.toLowerCase().replace(/\s+/g, "-")}`}
-                aria-pressed={marca === m}
-                className={`filter-pill ${marca === m ? "active" : ""}`}
-                onClick={() => setMarca(m)}
-              >
-                {m}
-              </button>
-            ))}
+          {/* Fila 2: Categorías con scroll horizontal deslizable táctil (Swipe) */}
+          <div className="categories-scroll-wrapper" style={{ position: "relative" }}>
+            <div
+              className="categories-scroll"
+              style={{
+                display: "flex",
+                gap: 8,
+                overflowX: "auto",
+                whiteSpace: "nowrap",
+                padding: "2px 0 4px 0",
+                WebkitOverflowScrolling: "touch",
+                scrollbarWidth: "none",
+              }}
+            >
+              {categorias.map((cat) => {
+                const active = categoria === cat;
+                return (
+                  <button
+                    key={cat}
+                    id={`filtro-categoria-${cat.toLowerCase().replace(/\s+/g, "-")}`}
+                    aria-pressed={active}
+                    className={`filter-pill ${active ? "active" : ""}`}
+                    onClick={() => setCategoria(cat)}
+                    style={{
+                      flexShrink: 0,
+                      padding: "6px 14px",
+                      fontSize: "0.78rem",
+                      borderRadius: 999,
+                      border: active ? "1px solid #eab308" : "1px solid rgba(255,255,255,0.1)",
+                      background: active ? "#eab308" : "rgba(15, 23, 42, 0.7)",
+                      color: active ? "#020617" : "#cbd5e1",
+                      fontWeight: active ? 800 : 500,
+                      cursor: "pointer",
+                      transition: "all 0.15s",
+                    }}
+                  >
+                    {cat}
+                  </button>
+                );
+              })}
+            </div>
           </div>
         </div>
+
+        <style>{`
+          .categories-scroll::-webkit-scrollbar {
+            display: none;
+          }
+          @media (min-width: 769px) {
+            .catalogo-filter-bar {
+              position: sticky;
+              top: 80px;
+            }
+          }
+          @media (max-width: 768px) {
+            .catalogo-filter-bar {
+              position: static !important;
+            }
+          }
+        `}</style>
       </div>
 
       {/* ── GRID ── */}
