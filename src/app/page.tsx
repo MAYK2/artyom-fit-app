@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import Hero from "@/components/layout/Hero";
 import { getProductos, getCategorias } from "@/services/productos";
 import { getRopa } from "@/services/ropa";
@@ -21,7 +22,13 @@ export default function HomePage() {
           </h2>
           <div className="gold-line mt-3 mb-1" />
         </div>
-        <CatalogoGrid productos={productos} categorias={categorias} />
+        <Suspense fallback={
+          <div style={{ textAlign: "center", padding: "40px 0", color: "#64748b" }}>
+            Cargando catálogo...
+          </div>
+        }>
+          <CatalogoGrid productos={productos} categorias={categorias} />
+        </Suspense>
       </section>
 
       {/* Sección Ropa Destacada */}

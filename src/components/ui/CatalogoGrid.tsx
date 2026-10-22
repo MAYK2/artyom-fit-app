@@ -1,40 +1,104 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect, useRef } from "react";
+import { useSearchParams } from "next/navigation";
 import ProductCard from "@/components/ui/ProductCard";
 import { Producto } from "@/types";
-import { Search } from "lucide-react";
+import { Search, X, RotateCcw } from "lucide-react";
 
 interface CatalogoGridProps {
   productos: Producto[];
   categorias: string[];
 }
 
+function normalizeText(text: string): string {
+  return text
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "");
+}
+
 export default function CatalogoGrid({ productos, categorias }: CatalogoGridProps) {
+  const searchParams = useSearchParams();
+  const urlQuery = searchParams.get("q") || searchParams.get("busqueda") || "";
+
   const [categoria, setCategoria] = useState("Todos");
   const [marca, setMarca] = useState("Todas");
-  const [busqueda, setBusqueda] = useState("");
+  const [busqueda, setBusqueda] = useState(urlQuery);
   const [orden, setOrden] = useState("");
-  const marcas = ["Todas", "ENA", "Star Nutrition", "GOLD NUTRITION", "XBODY Evolution"];
+  const inputRef = useRef<HTMLInputElement>(null);
 
+  // Sincronizar cuando cambia la URL
+  useEffect(() => {
+    if (urlQuery !== undefined) {
+      setBusqueda(urlQuery);
+      if (urlQuery) {
+        setCategoria("Todos");
+        setMarca("Todas");
+      }
+    }
+  }, [urlQuery]);
+
+  // Lista dinámica de marcas a partir de los productos disponibles
+  const marcas = useMemo(() => {
+    const list = Array.from(new Set(productos.map((p) => p.marca).filter(Boolean)));
+    return ["Todas", ...list.sort()];
+  }, [productos]);
+
+  // Filtrado inteligente: normaliza acentos y busca por palabras (tokens)
   const filtrados = useMemo(() => {
     let lista = productos;
-    if (categoria !== "Todos") lista = lista.filter((p) => p.categoria === categoria);
-    if (marca !== "Todas") lista = lista.filter((p) => p.marca === marca);
-    if (busqueda.trim()) lista = lista.filter((p) =>
-      p.nombre.toLowerCase().includes(busqueda.toLowerCase())
-    );
+
+    if (categoria !== "Todos") {
+      lista = lista.filter((p) => p.categoria === categoria);
+    }
+    if (marca !== "Todas") {
+      lista = lista.filter((p) => p.marca === marca);
+    }
+
+    if (busqueda.trim()) {
+      const terms = normalizeText(busqueda).split(/\s+/).filter(Boolean);
+      lista = lista.filter((p) => {
+        const saboresText = (p.sabores || []).map((s) => s.nombre).join(" ");
+        const searchable = normalizeText(
+          `${p.nombre} ${p.marca || ""} ${p.categoria || ""} ${p.descripcion || ""} ${saboresText}`
+        );
+        return terms.every((t) => searchable.includes(t));
+      });
+    }
+
     if (orden === "asc") lista = [...lista].sort((a, b) => a.precioArtyom - b.precioArtyom);
     if (orden === "desc") lista = [...lista].sort((a, b) => b.precioArtyom - a.precioArtyom);
     return lista;
   }, [productos, categoria, marca, busqueda, orden]);
 
+  // Total de coincidencias si se quitan filtros de categoría y marca
+  const totalCoincidenciasGenerales = useMemo(() => {
+    if (!busqueda.trim()) return productos.length;
+    const terms = normalizeText(busqueda).split(/\s+/).filter(Boolean);
+    return productos.filter((p) => {
+      const saboresText = (p.sabores || []).map((s) => s.nombre).join(" ");
+      const searchable = normalizeText(
+        `${p.nombre} ${p.marca || ""} ${p.categoria || ""} ${p.descripcion || ""} ${saboresText}`
+      );
+      return terms.every((t) => searchable.includes(t));
+    }).length;
+  }, [productos, busqueda]);
+
+  const limpiarFiltros = () => {
+    setCategoria("Todos");
+    setMarca("Todas");
+    setBusqueda("");
+    setOrden("");
+  };
+
   return (
     <div>
       {/* ── BARRA DE FILTROS ── */}
       <div style={{
-        position: "sticky", top: 64, zIndex: 40,
-        background: "#020617",
+        position: "sticky", top: 80, zIndex: 30,
+        background: "rgba(2, 6, 23, 0.95)",
+        backdropFilter: "blur(12px)",
         borderBottom: "1px solid rgba(255,255,255,0.06)",
         padding: "14px 0",
       }}>
@@ -42,18 +106,68 @@ export default function CatalogoGrid({ productos, categorias }: CatalogoGridProp
 
           {/* Fila 1: search + orden */}
           <div style={{ display: "flex", alignItems: "center", gap: 12, flexWrap: "wrap" }}>
-            <div className="search-input" style={{ flex: "1 1 200px", maxWidth: 320 }}>
-              <label htmlFor="catalogo-busqueda" className="sr-only">Buscar producto</label>
-              <Search size={15} color="#64748b" />
-              <input
-                id="catalogo-busqueda"
-                type="text"
-                aria-label="Buscar producto"
-                placeholder="Buscar producto..."
-                value={busqueda}
-                onChange={(e) => setBusqueda(e.target.value)}
-              />
-            </div>
+            <form
+              onSubmit={(e) => {
+                e.preventDefault();
+                inputRef.current?.blur();
+              }}
+              style={{ flex: "1 1 240px", maxWidth: 360, margin: 0 }}
+            >
+              <div className="search-input" style={{ width: "100%", maxWidth: "100%" }}>
+                <label htmlFor="catalogo-busqueda" className="sr-only">Buscar producto</label>
+                <button
+                  type="submit"
+                  aria-label="Buscar producto"
+                  style={{
+                    background: "none",
+                    border: "none",
+                    padding: 0,
+                    margin: 0,
+                    cursor: "pointer",
+                    display: "flex",
+                    alignItems: "center",
+                    color: busqueda.trim() ? "#eab308" : "#64748b",
+                    transition: "color 0.2s",
+                  }}
+                  title="Buscar"
+                >
+                  <Search size={16} />
+                </button>
+                <input
+                  ref={inputRef}
+                  id="catalogo-busqueda"
+                  type="text"
+                  aria-label="Buscar producto"
+                  placeholder="Buscar producto, marca, ingrediente..."
+                  value={busqueda}
+                  onChange={(e) => setBusqueda(e.target.value)}
+                />
+                {busqueda && (
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setBusqueda("");
+                      inputRef.current?.focus();
+                    }}
+                    aria-label="Limpiar búsqueda"
+                    style={{
+                      background: "none",
+                      border: "none",
+                      padding: 2,
+                      cursor: "pointer",
+                      color: "#94a3b8",
+                      display: "flex",
+                      alignItems: "center",
+                      borderRadius: 4,
+                      transition: "color 0.15s",
+                    }}
+                    title="Limpiar búsqueda"
+                  >
+                    <X size={15} />
+                  </button>
+                )}
+              </div>
+            </form>
 
             <select
               id="catalogo-orden"
@@ -75,6 +189,28 @@ export default function CatalogoGrid({ productos, categorias }: CatalogoGridProp
               <option value="asc">Menor precio primero</option>
               <option value="desc">Mayor precio primero</option>
             </select>
+
+            {(busqueda || categoria !== "Todos" || marca !== "Todas" || orden) && (
+              <button
+                onClick={limpiarFiltros}
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: 6,
+                  background: "rgba(234, 179, 8, 0.1)",
+                  border: "1px solid rgba(234, 179, 8, 0.3)",
+                  color: "#eab308",
+                  padding: "6px 12px",
+                  borderRadius: 8,
+                  fontSize: "0.75rem",
+                  fontWeight: 600,
+                  cursor: "pointer",
+                  transition: "all 0.15s",
+                }}
+              >
+                <RotateCcw size={12} /> Limpiar filtros
+              </button>
+            )}
           </div>
 
           {/* Fila 2: categorías */}
@@ -113,14 +249,63 @@ export default function CatalogoGrid({ productos, categorias }: CatalogoGridProp
 
       {/* ── GRID ── */}
       <div style={{ maxWidth: 1280, margin: "0 auto", padding: "28px 20px 60px" }}>
-        <p style={{ fontSize: "0.8rem", color: "#475569", marginBottom: 20 }}>
-          <span style={{ color: "#eab308", fontWeight: 700 }}>{filtrados.length}</span> producto{filtrados.length !== 1 ? "s" : ""} encontrado{filtrados.length !== 1 ? "s" : ""}
-        </p>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 20, flexWrap: "wrap", gap: 8 }}>
+          <p style={{ fontSize: "0.85rem", color: "#64748b", margin: 0 }}>
+            Mostrando <span style={{ color: "#eab308", fontWeight: 700 }}>{filtrados.length}</span> producto{filtrados.length !== 1 ? "s" : ""}
+            {busqueda.trim() && (
+              <span> para <strong style={{ color: "#f1f5f9" }}>"{busqueda}"</strong></span>
+            )}
+          </p>
+        </div>
 
         {filtrados.length === 0 ? (
-          <div style={{ textAlign: "center", padding: "80px 0", color: "#475569" }}>
-            <p style={{ fontSize: "3rem", marginBottom: 16 }}>🔍</p>
-            <p style={{ fontSize: "1rem", fontWeight: 500 }}>Sin resultados para tu búsqueda</p>
+          <div style={{
+            textAlign: "center",
+            padding: "60px 20px",
+            background: "rgba(15, 23, 42, 0.4)",
+            border: "1px solid rgba(255, 255, 255, 0.05)",
+            borderRadius: 16,
+            maxWidth: 600,
+            margin: "0 auto",
+          }}>
+            <p style={{ fontSize: "3rem", marginBottom: 12 }}>🔍</p>
+            <h3 style={{ fontSize: "1.1rem", fontWeight: 700, color: "#f1f5f9", marginBottom: 8 }}>
+              Sin resultados para tu búsqueda
+            </h3>
+            {busqueda && (
+              <p style={{ fontSize: "0.9rem", color: "#94a3b8", marginBottom: 16 }}>
+                No encontramos productos que coincidan con <strong style={{ color: "#eab308" }}>"{busqueda}"</strong>
+                {categoria !== "Todos" && ` en la categoría "${categoria}"`}
+                {marca !== "Todas" && ` para la marca "${marca}"`}.
+              </p>
+            )}
+
+            {/* Sugerencia inteligente si hay coincidencias en otras categorías */}
+            {(categoria !== "Todos" || marca !== "Todas") && totalCoincidenciasGenerales > 0 ? (
+              <div style={{ marginTop: 16 }}>
+                <p style={{ fontSize: "0.85rem", color: "#cbd5e1", marginBottom: 12 }}>
+                  ¡Encontramos <strong>{totalCoincidenciasGenerales}</strong> producto{totalCoincidenciasGenerales > 1 ? "s" : ""} coincidente{totalCoincidenciasGenerales > 1 ? "s" : ""} en otras categorías!
+                </p>
+                <button
+                  onClick={() => {
+                    setCategoria("Todos");
+                    setMarca("Todas");
+                  }}
+                  className="btn-primary"
+                  style={{ padding: "8px 20px", fontSize: "0.85rem" }}
+                >
+                  Buscar en todo el catálogo
+                </button>
+              </div>
+            ) : (
+              <button
+                onClick={limpiarFiltros}
+                className="btn-primary"
+                style={{ padding: "8px 20px", fontSize: "0.85rem", marginTop: 8 }}
+              >
+                Ver todos los productos
+              </button>
+            )}
           </div>
         ) : (
           <div style={{
